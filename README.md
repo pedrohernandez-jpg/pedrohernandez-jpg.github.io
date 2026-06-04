@@ -10,7 +10,7 @@ Actualmente me desempeño como **Investigador Invitado (Nivel Postdoctoral)** en
 
 ## 🔬 Intereses de Investigación
 
-Mi investigación aborda el desarrollo de nuevas teorías de homogeneización y reducción simultánea de dimensiones (convergencia multiescala, $\Gamma$-convergencia y el método de despliegue/*unfolding method*) utilizando técnicas de cálculo de variaciones, teoría de operadores y teoría geométrica de la medida. Estas teorías tienen aplicaciones directas en:
+Mi investigación aborda el desarrollo de nuevas teorías de homogenización y reducción simultánea de dimensiones (convergencia multiescala, $\Gamma$-convergencia y el método de despliegue/*unfolding method*) utilizando técnicas de cálculo de variaciones, teoría de operadores y teoría geométrica de la medida. Estas teorías tienen aplicaciones directas en:
 
 * Mecánica de Sólidos y Ciencia de Materiales.
 * Ingeniería Mecánica, Eléctrica y Flujo de Fluidos.
