@@ -2,7 +2,7 @@ Aquí tienes el texto completamente limpio, sin ninguna etiqueta de cita y listo
 
 # Pedro Luis Hernández-Llanos, Ph.D.
 
-¡Bienvenido a mi perfil de GitHub! Soy un matemático puro y aplicado especializado en el **Cálculo de Variaciones** y **Ecuaciones Diferenciales Parciales (EDPs)**. Mi trabajo de investigación se centra en el uso de métodos variacionales aplicados a la homogeneización de problemas con estructuras delgadas y multiestructuras.
+¡Bienvenido a mi perfil de GitHub! Soy un matemático puro y aplicado especializado en el **Cálculo de Variaciones** y **Ecuaciones Diferenciales Parciales (EDPs)**. Mi trabajo de investigación se centra en el uso de métodos variacionales aplicados a la homogenización de problemas con estructuras delgadas y multiestructuras.
 
 Actualmente me desempeño como **Investigador Invitado (Nivel Postdoctoral)** en el Grupo de Modelado Matemático y Análisis dentro del Departamento de Matemáticas y Estadística Matemática de la **Universidad de Umeå**, Suecia.
 
