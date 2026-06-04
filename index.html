@@ -65,13 +65,30 @@
         
         .affiliation { font-style: italic; color: #666; margin-bottom: 20px; }
         
-        ul { padding-left: 20px; margin-bottom: 20px; }
-        li { margin-bottom: 10px; }
+        ol { padding-left: 20px; margin-bottom: 20px; }
+        ol li { margin-bottom: 20px; text-align: justify; }
         
         .pub-title { font-weight: 600; color: #111; }
         .pub-journal { font-style: italic; color: #444; }
         .pub-links a { font-size: 0.85rem; color: #0066cc; text-decoration: none; margin-right: 10px; }
         .pub-links a:hover { text-decoration: underline; }
+        
+        /* Estilos para las contribuciones colapsables */
+        details {
+            margin-top: 5px;
+            background: #f6f8fa;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            border: 1px solid #e1e4e8;
+        }
+        summary {
+            font-weight: 600;
+            color: #555;
+            cursor: pointer;
+            outline: none;
+        }
+        summary:hover { color: #0066cc; }
         
         .sidebar-box {
             background-color: #fff;
@@ -144,45 +161,76 @@
             <section id="publications">
                 <h2>Publicaciones</h2>
                 
-                <h3>Revistas Arbitradas (Peer-Reviewed)</h3>
-                <ul>
+                <h3>Revistas Arbitradas (Peer-Reviewed Journal Publications)</h3>
+                <ol>
                     <li>
-                        <span class="pub-title">Poroelastic plate model obtained by simultaneous homogenization and dimension reduction.</span><br>
-                        M. Bužančić, P. Hernández-Llanos, I. Velčić, & J. Žubrinić.<br>
-                        <span class="pub-journal">Journal of Evolution Equations</span> no. 26:12, pp. 1-88, 2026.<br>
+                        M. Bužančić, P. Hernández-Llanos, I. Velčić, and J. Žubrinić, <span class="pub-title">“Poroelastic plate model obtained by simultaneous homogenization and dimension reduction,”</span> <span class="pub-journal">Journal of Evolution Equations</span> no. 26:12, pp. 1–88, 2026, ISSN: 1424-3202.
                         <div class="pub-links"><a href="https://doi.org/10.1007/s00028-025-01152-z" target="_blank">DOI: 10.1007/s00028-025-01152-z</a></div>
+                        <details>
+                            <summary>Main contributions</summary>
+                            <p style="margin-top:5px; font-size:0.85rem;">The starting point of our analysis is a coupled system of linear elasticity and Stokes equation. We consider two small parameters: the thickness h of the thin plate and the pore scale \(\epsilon(h)\) which depends on h. We will focus specifically on the case when the pore size is comparatively small relative to the thickness of the plate. The main goal here is derive a model of a poroelastic plate, starting from the 3D problem as h goes to zero, using simultaneous homogenization and dimension reduction techniques. The obtained model generalizes the poroelastic plate model derived by A. Mikelić et. al. in 2015 using dimension reduction techniques from 3D Biot’s equations in the sense that it also covers the case of contacts of poroelastic and (poro)elastic plate as well as the evolution equation with inertial term.</p>
+                        </details>
                     </li>
                     <li>
-                        <span class="pub-title">Kirchhoff-type equations involving the fractional (p, q)-laplacian.</span><br>
-                        L. Carrero & P. Hernández-Llanos.<br>
-                        <span class="pub-journal">Journal of Mathematical Analysis and Applications</span> no. 558, 130449, pp. 1-15, 2026.<br>
+                        L. Carrero and P. Hernández-Llanos, <span class="pub-title">“Kirchhoff-type equations involving the fractional (p, q)−laplacian,”</span> <span class="pub-journal">Journal of Mathematical Analysis and Applications</span> no. 558, 130449, pp. 1–15, 2026, ISSN: 0022-247X.
                         <div class="pub-links"><a href="https://doi.org/10.1016/j.jmaa.2026.130449" target="_blank">DOI: 10.1016/j.jmaa.2026.130449</a></div>
+                        <details>
+                            <summary>Main contributions</summary>
+                            <p style="margin-top:5px; font-size:0.85rem;">We study the existence and nonexistence of solutions for the following Kirchhoff-type fractional \((p - q)\)-Laplacian problem. Using variational methods, we establish the existence of at least two weak solutions. The first solution is obtained via the direct minimization of the associated energy functional, and the second is obtained by applying the Mountain Pass Theorem. We also prove a nonexistence result for small values of the parameter \(\lambda > 0\).</p>
+                        </details>
                     </li>
                     <li>
-                        <span class="pub-title">A homogenized bending shell theory for multiscale materials from 3D nonlinear elasticity.</span><br>
-                        T. Durante, L. Faella, P. Hernández-Llanos, & R. Prakash.<br>
-                        <span class="pub-journal">Journal of Elasticity</span>, 2025.<br>
+                        T. Durante, L. Faella, P. Hernández-Llanos, and R. Prakash, <span class="pub-title">“A homogenized bending shell theory for multiscale materials from 3D nonlinear elasticity,”</span> <span class="pub-journal">Journal of Elasticity</span>, 2025, ISSN: 1573-2681.
                         <div class="pub-links"><a href="https://doi.org/10.1007/s10659-025-10154-4" target="_blank">DOI: 10.1007/s10659-025-10154-4</a></div>
+                        <details>
+                            <summary>Main contributions</summary>
+                            <p style="margin-top:5px; font-size:0.85rem;">We combine homogenization and dimension reduction simultaneous to derive a homogenized bending shell theories starting from three-dimensional nonlinear elasticity which contains three small parameters: the two homogenization scales \(\epsilon\) and \(\epsilon^2\) of the material properties and the thickness h.</p>
+                        </details>
                     </li>
                     <li>
-                        <span class="pub-title">Asymptotic analysis of a junction of hyperelastic rods.</span><br>
-                        P. Hernández-Llanos.<br>
-                        <span class="pub-journal">Asymptotic Analysis</span> vol. 126, no. 3-4, pp. 303-322, 2022.<br>
+                        P. Hernández-Llanos, <span class="pub-title">“Asymptotic analysis of a junction of hyperelastic rods,”</span> <span class="pub-journal">Asymptotic Analysis</span> vol. 126, no. 3-4, pp. 303–322, 2022, ISSN: 0921-7134.
                         <div class="pub-links"><a href="https://doi.org/10.3233/ASY-211683" target="_blank">DOI: 10.3233/ASY-211683</a></div>
+                        <details>
+                            <summary>Main contributions</summary>
+                            <p style="margin-top:5px; font-size:0.85rem;">I obtain a 1-dimensional asymptotic model for a junction of thin hyperelastic rods as the thickness goes to zero. We show, under appropriate hypotheses on the loads, that the deformations that minimize the total energy weakly converge in a Sobolev space towards the minimum of a 1D-dimensional energy for elastic strings by using techniques from \(\Gamma\)-convergence.</p>
+                        </details>
                     </li>
-                </ul>
+                    <li>
+                        L. Carbone, A. Gaudiello, and P. Hernández-Llanos, <span class="pub-title">“T-junction of ferroelectric wires,”</span> <span class="pub-journal">ESAIM: Mathematical Modelling and Numerical Analysis (ESAIM: M2AN)</span> vol. 54, no. 5, pp. 1429–1463, 2020, ISSN: 2822-7840.
+                        <div class="pub-links"><a href="https://doi.org/10.1051/m2an/2020001" target="_blank">DOI: 10.1051/m2an/2020001</a></div>
+                        <details>
+                            <summary>Main contributions</summary>
+                            <p style="margin-top:5px; font-size:0.85rem;">Starting from a non-convex and nonlocal 3D variational mathematical model for the electric polarization in a ferroelectric material, and using an asymptotic process based on dimensional reduction, we analyze junction phenomena for two orthogonal joined ferroelectric wires. Depending on the initial boundary conditions, we get several different limit problems, sometimes un-coupled. We point out that all the limit problems remain non-convex, but the nonlocality disappears.</p>
+                        </details>
+                    </li>
+                    <li>
+                        P. Hernández-Llanos, Y. Quintana, and A. Urieles, <span class="pub-title">“About extensions of generalized apostol-type polynomials,”</span> <span class="pub-journal">Results in Mathematics</span> no. 68, pp. 203–225, 2015, ISSN: 1420-9012.
+                        <div class="pub-links"><a href="https://doi.org/10.1007/s00025-014-0430-2" target="_blank">DOI: 10.1007/s00025-014-0430-2</a></div>
+                        <details>
+                            <summary>Main contributions</summary>
+                            <p style="margin-top:5px; font-size:0.85rem;">Under a slight modification on the parameters associated to the generalized Apostol-type polynomials and the use of the generating method, we obtain some new results concerning extensions of generalized Apostol-type polynomials. We state some algebraic and differential properties for a new class of extensions of generalized Apostol-type polynomials, as well as, some others identities which connect this polynomial class with the Stirling numbers of second kind, the Jacobi polynomials, the generalized Bernoulli polynomials, the Genocchi polynomials and the Apostol–Euler polynomials, respectively.</p>
+                        </details>
+                    </li>
+                </ol>
 
-                <h3>Artículos Enviados / En Revisión</h3>
+                <h3>Artículos Enviados / En Revisión (Submitted)</h3>
                 <ul>
                     <li>
-                        <span class="pub-title">Junction of ferroelectric thin cylinders.</span><br>
-                        L. Faella, P. Hernández-Llanos, & R. Prakash. <span class="pub-journal">Under review with ESAIM: COCV</span>.<br>
+                        L. Faella, P. Hernández-Llanos, & R. Prakash, <span class="pub-title">“Junction of ferroelectric thin cylinders,”</span> <span class="pub-journal">Under review with ESAIM: Control, Optimisation and Calculus of Variations</span>.<br>
                         <div class="pub-links"><a href="https://doi.org/10.48550/arXiv.2311.00515" target="_blank">arXiv:2311.00515</a></div>
                     </li>
                     <li>
-                        <span class="pub-title">Homogenized moderately wrinkled shell theory from 3d koiter's linear elasticity.</span><br>
-                        P. Hernández-Llanos, R. Mahadevan, & R. Prakash. <span class="pub-journal">Under review with Journal of Elasticity</span>.<br>
+                        P. Hernández-Llanos, R. Mahadevan, & R. Prakash, <span class="pub-title">“Homogenized moderately wrinkled shell theory from 3d koiter's linear elasticity,”</span> <span class="pub-journal">Under review with Journal of Elasticity</span>.<br>
                         <div class="pub-links"><a href="https://arxiv.org/abs/2601.11384" target="_blank">arXiv:2601.11384</a></div>
+                    </li>
+                </ul>
+
+                <h3>Tesis Doctoral (PhD Thesis)</h3>
+                <ul>
+                    <li>
+                        <span class="pub-title">Variational limits of problems in junction domains for Ferroelectric and Hyperelastic materials by reduction of dimension.</span><br>
+                        Pedro Hernández-Llanos. <span class="pub-journal">Universidad de Concepción, Chile</span>, 2020.<br>
+                        <div class="pub-links"><a href="http://dmat.cfm.cl/dmat/wp-content/uploads/2020/12/Tesis_PHernandezL.pdf" target="_blank">Ver Tesis Completa (PDF)</a></div>
                     </li>
                 </ul>
             </section>
@@ -192,7 +240,7 @@
                 <ul>
                     <li><strong>Guest Researcher (Nivel Postdoctoral)</strong> - Umeå University, Sweden (2026 - Presente).</li>
                     <li><strong>Investigador Postdoctoral (Fondecyt 3230202)</strong> - Universidad de O'Higgins, Chile (2023 - 2026).</li>
-                    <li><strong>Investigador Postdoctoral Técnico</strong> - University of Zagreb, Croacia (2021 - 2022).</li>
+                    <li><strong>Investigador Postdoctoral Asociado</strong> - University of Zagreb, Croacia (2021 - 2022).</li>
                 </ul>
             </section>
 
