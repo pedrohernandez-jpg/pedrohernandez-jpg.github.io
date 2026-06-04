@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Luis Hernández-Llanos</title>
+    <!-- Estilos CSS inspirados en el diseño limpio y académico de Sergio Caucao -->
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #fcfcfc;
+        }
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #eaeaea;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #222;
+            text-decoration: none;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #555;
+            font-size: 0.95rem;
+        }
+        nav a:hover { color: #0066cc; }
+        
+        .main-container {
+            max-width: 1000px;
+            margin: 80px auto 40px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 40px;
+        }
+        @media (max-width: 768px) {
+            .main-container { grid-template-columns: 1fr; }
+            .sidebar { order: -1; text-align: center; }
+        }
+        
+        h1 { font-size: 2.2rem; color: #111; margin-bottom: 5px; }
+        h2 { font-size: 1.4rem; color: #222; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-top: 35px; }
+        h3 { font-size: 1.1rem; color: #444; margin-bottom: 5px; }
+        p { margin: 0 0 15px 0; text-align: justify; }
+        
+        .affiliation { font-style: italic; color: #666; margin-bottom: 20px; }
+        
+        ul { padding-left: 20px; margin-bottom: 20px; }
+        li { margin-bottom: 10px; }
+        
+        .pub-title { font-weight: 600; color: #111; }
+        .pub-journal { font-style: italic; color: #444; }
+        .pub-links a { font-size: 0.85rem; color: #0066cc; text-decoration: none; margin-right: 10px; }
+        .pub-links a:hover { text-decoration: underline; }
+        
+        .sidebar-box {
+            background-color: #fff;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            padding: 20px;
+            position: sticky;
+            top: 100px;
+        }
+        .profile-img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+        }
+        .contact-list { list-style: none; padding: 0; margin: 0; font-size: 0.9rem; }
+        .contact-list li { margin-bottom: 8px; overflow-wrap: break-word; }
+        .contact-list a { color: #0066cc; text-decoration: none; }
+        .contact-list a:hover { text-decoration: underline; }
+        
+        footer {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.85rem;
+            color: #777;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de navegación superior estático como el de Sergio -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">P. Hernández-Llanos</a>
+            <nav>
+                <a href="#about">Acerca de</a>
+                <a href="#publications">Publicaciones</a>
+                <a href="#projects">Trayectoria</a>
+                <a href="#teaching">Docencia</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Columna Principal Izquierda -->
+        <div class="content">
+            <section id="about">
+                <h1>Pedro Luis Hernández-Llanos, Ph.D.</h1>
+                <div class="affiliation">Guest Researcher, Umeå University, Sweden[cite: 1]</div>
+                
+                <p>
+                    Soy un matemático puro y aplicado especializado en el <strong>Cálculo de Variaciones</strong> y <strong>Ecuaciones Diferenciales Parciales (EDPs)</strong>[cite: 1]. El uso de métodos variacionales es el eje central de mi investigación, enfocándome principalmente en la homogeneización de problemas asociados a EDPs con estructuras delgadas y multiestructuras[cite: 1].
+                </p>
+                <p>
+                    Me interesa el desarrollo de nuevas teorías de homogeneización y reducción simultánea de dimensiones (convergencia multiescala, $\Gamma$-convergencia y el método de despliegue) con herramientas de la teoría de operadores y la teoría geométrica de la medida, orientadas a aplicaciones en la Mecánica de Sólidos, Ciencia de Materiales, Ingeniería Mecánica, Eléctrica y Flujo de Fluidos[cite: 1].
+                </p>
+                
+                <h2>Líneas de Investigación</h2>
+                <ul>
+                    <li>Homogeneización y reducción dimensional en elasticidad no lineal[cite: 1].</li>
+                    <li>Modelos de placas poroelásticas, estructuras magnetoelásticas y geles elásticos[cite: 1].</li>
+                    <li>Fenómenos de unión en materiales ferroeléctricos (T-junctions)[cite: 1].</li>
+                </ul>
+            </section>
+
+            <section id="publications">
+                <h2>Publicaciones</h2>
+                
+                <h3>Revistas Arbitradas (Peer-Reviewed)</h3>
+                <ul>
+                    <li>
+                        <span class="pub-title">Poroelastic plate model obtained by simultaneous homogenization and dimension reduction.</span><br>
+                        M. Bužančić, P. Hernández-Llanos, I. Velčić, & J. Žubrinić.<br>
+                        <span class="pub-journal">Journal of Evolution Equations</span> no. 26:12, pp. 1-88, 2026[cite: 1].<br>
+                        <div class="pub-links"><a href="https://doi.org/10.1007/s00028-025-01152-z" target="_blank">DOI: 10.1007/s00028-025-01152-z</a></div>
+                    </li>
+                    <li>
+                        <span class="pub-title">Kirchhoff-type equations involving the fractional (p, q)-laplacian.</span><br>
+                        L. Carrero & P. Hernández-Llanos.<br>
+                        <span class="pub-journal">Journal of Mathematical Analysis and Applications</span> no. 558, 130449, pp. 1-15, 2026[cite: 1].<br>
+                        <div class="pub-links"><a href="https://doi.org/10.1016/j.jmaa.2026.130449" target="_blank">DOI: 10.1016/j.jmaa.2026.130449</a></div>
+                    </li>
+                    <li>
+                        <span class="pub-title">A homogenized bending shell theory for multiscale materials from 3D nonlinear elasticity.</span><br>
+                        T. Durante, L. Faella, P. Hernández-Llanos, & R. Prakash.<br>
+                        <span class="pub-journal">Journal of Elasticity</span>, 2025[cite: 1].<br>
+                        <div class="pub-links"><a href="https://doi.org/10.1007/s10659-025-10154-4" target="_blank">DOI: 10.1007/s10659-025-10154-4</a></div>
+                    </li>
+                    <li>
+                        <span class="pub-title">Asymptotic analysis of a junction of hyperelastic rods.</span><br>
+                        P. Hernández-Llanos.<br>
+                        <span class="pub-journal">Asymptotic Analysis</span> vol. 126, no. 3-4, pp. 303-322, 2022[cite: 1].<br>
+                        <div class="pub-links"><a href="https://doi.org/10.3233/ASY-211683" target="_blank">DOI: 10.3233/ASY-211683</a></div>
+                    </li>
+                </ul>
+
+                <h3>Artículos Enviados / En Revisión</h3>
+                <ul>
+                    <li>
+                        <span class="pub-title">Junction of ferroelectric thin cylinders.</span><br>
+                        L. Faella, P. Hernández-Llanos, & R. Prakash. <span class="pub-journal">Under review with ESAIM: COCV</span>[cite: 1].<br>
+                        <div class="pub-links"><a href="https://doi.org/10.48550/arXiv.2311.00515" target="_blank">arXiv:2311.00515</a></div>
+                    </li>
+                    <li>
+                        <span class="pub-title">Homogenized moderately wrinkled shell theory from 3d koiter's linear elasticity.</span><br>
+                        P. Hernández-Llanos, R. Mahadevan, & R. Prakash. <span class="pub-journal">Under review with Journal of Elasticity</span>[cite: 1].<br>
+                        <div class="pub-links"><a href="https://arxiv.org/abs/2601.11384" target="_blank">arXiv:2601.11384</a></div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="projects">
+                <h2>Trayectoria Académica</h2>
+                <ul>
+                    <li><strong>Guest Researcher (Nivel Postdoctoral)</strong> - Umeå University, Suecia (2026 - Presente)[cite: 1].</li>
+                    <li><strong>Investigador Postdoctoral (Fondecyt 3230202)</strong> - Universidad de O'Higgins, Chile (2023 - 2026)[cite: 1].</li>
+                    <li><strong>Investigador Postdoctoral Asociado</strong> - University of Zagreb, Croacia (2021 - 2022)[cite: 1].</li>
+                </ul>
+            </section>
+
+            <section id="teaching">
+                <h2>Docencia y Estudiantes</h2>
+                <h3>Cursos Recientes (UOH)</h3>
+                <ul>
+                    <li>ING1111: Introducción a las Matemáticas Discretas[cite: 1].</li>
+                    <li>ING1102: Álgebra Lineal[cite: 1].</li>
+                </ul>
+                <h3>Supervisión Activa</h3>
+                <ul>
+                    <li><strong>Patricio Morales-Rosales</strong> (Co-supervisión de Doctorado, Universidad de O'Higgins)[cite: 1].</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Columna Lateral Derecha (Sidebar como el de Sergio) -->
+        <div class="sidebar">
+            <div class="sidebar-box">
+                <!-- Puedes subir una foto tuya llamada profile.jpg a tu repositorio -->
+                <img src="profile.jpg" alt="Pedro Hernández-Llanos" class="profile-img" onerror="this.style.display='none'">
+                <h3>Contacto e Índices</h3>
+                <ul class="contact-list">
+                    <li>📧 <a href="mailto:phernandezllanos@gmail.com">phernandezllanos@gmail.com</a>[cite: 1]</li>
+                    <li>🆔 ORCID: <a href="https://orcid.org/0000-0001-5017-2108" target="_blank">0000-0001-5017-2108</a>[cite: 1]</li>
+                    <li>🔬 <a href="https://www.researchgate.net/profile/Pedro-Hernandez-Llanos" target="_blank">ResearchGate</a>[cite: 1]</li>
+                    <li>📝 <a href="https://zbmath.org/authors/?q=Pedro+Hernandez-Llanos" target="_blank">zbMATH Open</a>[cite: 1]</li>
+                    <li>💼 <a href="https://www.linkedin.com/in/pedro-hernandez-llanos-254124160/" target="_blank">LinkedIn</a>[cite: 1]</li>
+                    <li>🌍 <a href="https://sites.google.com/view/calcvar-uoh" target="_blank">Seminario CalcVar</a>[cite: 1]</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Pedro Luis Hernández-Llanos. Desarrollado en GitHub Pages.</p>
+    </footer>
+
+    <!-- Script opcional para renderizar ecuaciones matemáticas en la web -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/input/mml-chtml.js"></script>
+</body>
+</html>
