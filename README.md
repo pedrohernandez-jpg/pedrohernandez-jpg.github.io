@@ -1,4 +1,4 @@
-# Pedro Luis Hernández-Llanos, Ph.D.
+# Pedro Hernández-Llanos, Ph.D.
 
 Welcome to my GitHub profile! I am a pure and applied mathematician whose research focuses on the interaction of the **Calculus of Variations**, **Partial Differential Equations (PDEs)**, and solid mechanics, with applications to Materials Science and Continuum Mechanics. The use of variational methods is a common theme throughout my work. Specifically, I specialize in the **Homogenization** of problems arising in the context of PDEs with **Thin structures** and **Multistructures**. I am interested in developing new theories for **simultaneous homogenization and dimension reduction** (multiscale convergence, $\Gamma$-convergence, and the periodic unfolding method) by combining variational techniques, operator theory, and geometric measure theory. These theories find direct applications in Mechanical and Electrical Engineering, as well as Fluid Flow, to name a few.
 
