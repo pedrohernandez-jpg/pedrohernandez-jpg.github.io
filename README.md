@@ -51,7 +51,7 @@ My research addresses the development of new theories for simultaneous homogeniz
 
 I have experience developing scientific code applied to solving and simulating PDEs, variational methods, and dimensional reduction problems:
 
-* **Languages and Software:** Advanced in Python, MATLAB, Mathematica, and Wolfram Language.
+* **Languages and Software:** Advanced in Python, FreeFem++, MATLAB, Mathematica, and Wolfram Language.
 * **Scientific Typography:** Professional editing and typesetting in LaTeX and TeX.
 
 ---
