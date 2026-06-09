@@ -16,6 +16,37 @@ My research addresses the development of new theories for simultaneous homogeniz
 
 ---
 
+## 🎓 Education
+
+* **Ph.D. in Mathematics** | *Universidad de Concepción, Chile* (2015 – 2020)
+  * **Thesis:** *Variational limits of problems in junction domains for Ferroelectric and Hyperelastic materials by reduction of dimension*
+  * **Supervisors:** Prof. Rajesh Mahadevan, Prof. Ravi Prakash, Prof. Antonio Gaudiello, and Prof. Luciano Carbone.
+  * **Funding:** National Agency for Research and Development of Chile (ANID), Doctoral Fellowship.
+  * **Honors:** Grade 4.7/5.0 (1st in thesis, 2nd overall).
+
+* **M.Sc. in Mathematical Sciences** | *Universidad del Atlántico, Colombia* (2011 – 2014)
+  * **Thesis:** *On new families of generalized Apostol-type polynomials and their properties*
+  * **Supervisor:** Prof. Alejandro Urieles Guerrero.
+
+* **Bachelor’s Degree in High School Education (Major in Mathematics)** | *Universidad del Atlántico, Colombia* (2005 – 2010)
+  * **Honors:** Grade 4.34/5.0 (1st overall).
+  * **Awards:** Undergraduate prize for best student of promotion with M.Sc. Fellowship.
+
+---
+
+## 💼 Academic Trajectory and Projects
+
+* **Guest Researcher (Postdoctoral Level)** | *Umeå University, Sweden* (2026 – Present).
+  * Research on the derivation of the amplitude equation for the space-fractional Swift-Hohenberg equation via evolutionary $\Gamma$-convergence alongside Prof. Sebastian Throm.
+
+* **Postdoctoral Researcher** | *Universidad de O'Higgins (UOH), Chile* (2023 – 2026).
+  * Principal Investigator of the project **Fondecyt Postdoctoral ANID N° 3230202**, focused on two-dimensional models of thin structures with magnetoelasticity, poroelasticity, and rigid gel properties alongside Prof. Duvan Henao.
+
+* **Postdoctoral Research Associate** | *University of Zagreb, Croatia* (2021 – 2022).
+  * Project funded by the Croatian Science Foundation (HRZZ) centered on poroelastic plates via simultaneous homogenization and dimension reduction alongside Prof. Igor Velčić.
+
+---
+
 ## 🛠️ Scientific Computing and Tools
 
 I have experience developing scientific code applied to solving and simulating PDEs, variational methods, and dimensional reduction problems:
@@ -40,19 +71,6 @@ I have experience developing scientific code applied to solving and simulating P
 
 * *Junction of ferroelectric thin cylinders* (with L. Faella and R. Prakash) – Submitted to **ESAIM: COCV**. [arXiv:2311.00515](https://doi.org/10.48550/arXiv.2311.00515).
 * *Homogenized moderately wrinkled shell theory from 3d koiter's linear elasticity* (with R. Mahadevan and R. Prakash) – Submitted to **Journal of Elasticity**. [arXiv:2601.11384](https://arxiv.org/abs/2601.11384).
-
----
-
-## 💼 Academic Trajectory and Projects
-
-* **Guest Researcher (Postdoctoral Level)** | *Umeå University, Sweden* (2026 – Present).
-  * Research on the derivation of the amplitude equation for the space-fractional Swift-Hohenberg equation via evolutionary $\Gamma$-convergence alongside Prof. Sebastian Throm.
-
-* **Postdoctoral Researcher** | *Universidad de O'Higgins (UOH), Chile* (2023 – 2026).
-  * Principal Investigator of the project **Fondecyt Postdoctoral ANID N° 3230202**, focused on two-dimensional models of thin structures with magnetoelasticity, poroelasticity, and rigid gel properties alongside Prof. Duvan Henao.
-
-* **Postdoctoral Research Associate** | *University of Zagreb, Croatia* (2021 – 2022).
-  * Project funded by the Croatian Science Foundation (HRZZ) centered on poroelastic plates via simultaneous homogenization and dimension reduction alongside Prof. Igor Velčić.
 
 ---
 
