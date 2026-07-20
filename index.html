@@ -1,95 +1,343 @@
-# Pedro Hernández-Llanos, Ph.D.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Hernández-Llanos</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #fcfcfc;
+        }
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #eaeaea;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #222;
+            text-decoration: none;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #555;
+            font-size: 0.95rem;
+        }
+        nav a:hover { color: #0066cc; }
+        
+        .main-container {
+            max-width: 1000px;
+            margin: 80px auto 40px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 40px;
+        }
+        @media (max-width: 768px) {
+            .main-container { grid-template-columns: 1fr; }
+            .sidebar { order: -1; text-align: center; }
+        }
+        
+        h1 { font-size: 2.2rem; color: #111; margin-bottom: 5px; }
+        h2 { font-size: 1.4rem; color: #222; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-top: 35px; }
+        h3 { font-size: 1.1rem; color: #444; margin-bottom: 5px; margin-top: 15px; }
+        p { margin: 0 0 15px 0; text-align: justify; }
+        
+        .affiliation { font-style: italic; color: #666; margin-bottom: 20px; }
+        
+        ol, ul { padding-left: 20px; margin-bottom: 20px; }
+        ol li, ul li { margin-bottom: 10px; text-align: justify; }
+        
+        .pub-title { font-weight: 600; color: #111; }
+        .pub-journal { font-style: italic; color: #444; }
+        .pub-links a { font-size: 0.85rem; color: #0066cc; text-decoration: none; margin-right: 10px; }
+        .pub-links a:hover { text-decoration: underline; }
+        
+        details {
+            margin-top: 5px;
+            background: #f6f8fa;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            border: 1px solid #e1e4e8;
+        }
+        summary {
+            font-weight: 600;
+            color: #555;
+            cursor: pointer;
+            outline: none;
+        }
+        summary:hover { color: #0066cc; }
+        
+        .sidebar-box {
+            background-color: #fff;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            padding: 20px;
+            position: sticky;
+            top: 100px;
+        }
+        .profile-img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+        }
+        .contact-list { list-style: none; padding: 0; margin: 0; font-size: 0.9rem; }
+        .contact-list li { margin-bottom: 8px; overflow-wrap: break-word; }
+        .contact-list a { color: #0066cc; text-decoration: none; }
+        .contact-list a:hover { text-decoration: underline; }
+        
+        footer {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.85rem;
+            color: #777;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
 
-Welcome to my GitHub profile! I am a pure and applied mathematician whose research focuses on the interaction of the **Calculus of Variations**, **Partial Differential Equations (PDEs)**, and solid mechanics, with applications to Materials Science and Continuum Mechanics. The use of variational methods is a common theme throughout my work. Specifically, I specialize in the **Homogenization** of problems arising in the context of PDEs with **Thin structures** and **Multistructures**. I am interested in developing new theories for **simultaneous homogenization and dimension reduction** (multiscale convergence, $\Gamma$-convergence, and the periodic unfolding method) by combining variational techniques, operator theory, and geometric measure theory. These theories find direct applications in Mechanical and Electrical Engineering, as well as Fluid Flow, to name a few.
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">P. Hernández-Llanos</a>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#publications">Publications</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Trajectory</a>
+                <a href="#tools">Tools</a>
+                <a href="#teaching">Teaching</a>
+            </nav>
+        </div>
+    </header>
 
-I am currently a **Guest Researcher (Postdoctoral Level)** in the Mathematical Modelling and Analysis Group within the Department of Mathematics and Mathematical Statistics at **Umeå University**, Sweden.
+    <div class="main-container">
+        <div class="content">
+            <section id="about">
+                <h1>Pedro Hernández-Llanos, Ph.D.</h1>
+                <div class="affiliation">Guest Researcher (Postdoctoral Level), Umeå University, Sweden</div>
+                
+                <p>
+                    Welcome to my profile! I am a pure and applied mathematician whose research focuses on the interaction of the <strong>Calculus of Variations</strong>, <strong>Partial Differential Equations (PDEs)</strong>, and solid mechanics, with applications to Materials Science and Continuum Mechanics. The use of variational methods is a common theme throughout my work.
+                </p>
+                <p>
+                    Specifically, I specialize in the <strong>Homogenization</strong> of problems arising in the context of PDEs with <strong>Thin structures</strong> and <strong>Multistructures</strong>. I am interested in developing new theories for <strong>simultaneous homogenization and dimension reduction</strong> (multiscale convergence, $\Gamma$-convergence, and the periodic unfolding method) by combining variational techniques, operator theory, and geometric measure theory. These theories find direct applications in Mechanical and Electrical Engineering, as well as Fluid Flow, to name a few.
+                </p>
+                <p>
+                    I am currently a <strong>Guest Researcher (Postdoctoral Level)</strong> in the Mathematical Modelling and Analysis Group within the Department of Mathematics and Mathematical Statistics at <strong>Umeå University</strong>, Sweden.
+                </p>
+                
+                <h2>🔬 Research Interests</h2>
+                <p>
+                    My research addresses the development of new theories for simultaneous homogenization and dimension reduction using techniques from the calculus of variations, operator theory, and geometric measure theory. These theories have direct applications in:
+                </p>
+                <ul>
+                    <li>Solid Mechanics and Materials Science.</li>
+                    <li>Mechanical, Electrical Engineering, and Fluid Flow.</li>
+                    <li>Nonlinear elasticity models, poroelastic plates, magnetoelastic structures, and junctions of ferroelectric materials.</li>
+                </ul>
+            </section>
 
----
+            <section id="publications">
+                <h2>📝 Selected Publications</h2>
+                <h3>Peer-Reviewed Journals</h3>
+                <ol>
+                    <li>
+                        M. Bužančić, P. Hernández-Llanos, I. Velčić, and J. Žubrinić, <span class="pub-title">“Poroelastic plate model obtained by simultaneous homogenization and dimension reduction,”</span> <span class="pub-journal">Journal of Evolution Equations</span>, vol. 26:12, pp. 1–88, 2026.
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1007/s00028-025-01152-z" target="_blank">DOI: 10.1007/s00028-025-01152-z</a>
+                        </div>
+                        <details>
+                            <summary>Main contributions</summary>
+                            <p style="margin-top:5px; font-size:0.85rem;">The starting point of our analysis is a coupled system of linear elasticity and Stokes equation. We consider two small parameters: the thickness h of the thin plate and the pore scale ε(h). The obtained model generalizes the poroelastic plate model derived by A. Mikelić et. al. in 2015.</p>
+                        </details>
+                    </li>
+                    <li>
+                        L. Carrero and P. Hernández-Llanos, <span class="pub-title">“Kirchhoff-type equations involving the fractional (p, q)−laplacian,”</span> <span class="pub-journal">Journal of Mathematical Analysis and Applications</span>, vol. 558, 130449, pp. 1–15, 2026.
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1016/j.jmaa.2026.130449" target="_blank">DOI: 10.1016/j.jmaa.2026.130449</a>
+                        </div>
+                        <details>
+                            <summary>Main contributions</summary>
+                            <p style="margin-top:5px; font-size:0.85rem;">Using variational methods, we establish the existence of at least two weak solutions. The first is obtained via direct minimization and the second by the Mountain Pass Theorem.</p>
+                        </details>
+                    </li>
+                    <li>
+                        T. Durante, L. Faella, P. Hernández-Llanos, and R. Prakash, <span class="pub-title">“A homogenized bending shell theory for multiscale materials from 3D nonlinear elasticity,”</span> <span class="pub-journal">Journal of Elasticity</span>, 2025.
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1007/s10659-025-10154-4" target="_blank">DOI: 10.1007/s10659-025-10154-4</a>
+                        </div>
+                        <details>
+                            <summary>Main contributions</summary>
+                            <p style="margin-top:5px; font-size:0.85rem;">We combine homogenization and dimension reduction to derive shell theories from 3D nonlinear elasticity with three small parameters: two material scales and the thickness.</p>
+                        </details>
+                    </li>
+                    <li>
+                        P. Hernández-Llanos, <span class="pub-title">“Asymptotic analysis of a junction of hyperelastic rods,”</span> <span class="pub-journal">Asymptotic Analysis</span>, vol. 126, no. 3-4, pp. 303–322, 2022.
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.3233/ASY-211683" target="_blank">DOI: 10.3233/ASY-211683</a>
+                        </div>
+                        <details>
+                            <summary>Main contributions</summary>
+                            <p style="margin-top:5px; font-size:0.85rem;">I obtain a 1D asymptotic model for a junction of thin hyperelastic rods using Γ-convergence, showing weak convergence in Sobolev spaces.</p>
+                        </details>
+                    </li>
+                    <li>
+                        L. Carbone, A. Gaudiello, and P. Hernández-Llanos, <span class="pub-title">“T-junction of ferroelectric wires,”</span> <span class="pub-journal">ESAIM: Mathematical Modelling and Numerical Analysis (ESAIM: M2AN)</span>, vol. 54, no. 5, pp. 1429–1463, 2020.
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1051/m2an/20200001" target="_blank">DOI: 10.1051/m2an/20200001</a>
+                        </div>
+                        <details>
+                            <summary>Main contributions</summary>
+                            <p style="margin-top:5px; font-size:0.85rem;">Analysis of junction phenomena for orthogonal joined ferroelectric wires. We show that while the limit problems remain non-convex, the nonlocality disappears.</p>
+                        </details>
+                    </li>
+                    <li>
+                        P. Hernández-Llanos, Y. Quintana, and A. Urieles, <span class="pub-title">“About extensions of generalized apostol-type polynomials,”</span> <span class="pub-journal">Results in Mathematics</span>, vol. 68, pp. 203–225, 2015.
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1007/s00025-014-0430-2" target="_blank">DOI: 10.1007/s00025-014-0430-2</a>
+                        </div>
+                        <details>
+                            <summary>Main contributions</summary>
+                            <p style="margin-top:5px; font-size:0.85rem;">New results concerning extensions of generalized Apostol-type polynomials, connecting them with Stirling numbers and Jacobi polynomials.</p>
+                        </details>
+                    </li>
+                </ol>
 
-## 🔬 Research Interests
+                <h3>Under Review / Submitted</h3>
+                <ul>
+                    <li>
+                        <strong>Junction of ferroelectric thin cylinders</strong> (with L. Faella and R. Prakash) – Submitted to <em>ESAIM: COCV</em>. 
+                        <div class="pub-links"><a href="https://doi.org/10.48550/arXiv.2311.00515" target="_blank">arXiv:2311.00515</a></div>
+                    </li>
+                    <li>
+                        <strong>Homogenized moderately wrinkled shell theory from 3d koiter's linear elasticity</strong> (with R. Mahadevan and R. Prakash) – Submitted to <em>Journal of Elasticity</em>. 
+                        <div class="pub-links"><a href="https://arxiv.org/abs/2601.11384" target="_blank">arXiv:2601.11384</a></div>
+                    </li>
+                </ul>
+            </section>
 
-My research addresses the development of new theories for simultaneous homogenization and dimension reduction (multiscale convergence, $\Gamma$-convergence, and the periodic unfolding method) using techniques from the calculus of variations, operator theory, and geometric measure theory. These theories have direct applications in:
+            <section id="education">
+                <h2>🎓 Education</h2>
+                <ul>
+                    <li>
+                        <strong>Ph.D. in Mathematics</strong> | <em>Universidad de Concepción, Chile</em> (2015 – 2020)
+                        <br><span style="font-style: italic; color: #555;">Thesis:</span> “Variational limits of problems in junction domains for Ferroelectric and Hyperelastic materials by reduction of dimension”
+                        <br><span style="font-style: italic; color: #555;">Supervisors:</span> Prof. Rajesh Mahadevan, Prof. Ravi Prakash, Prof. Antonio Gaudiello, and Prof. Luciano Carbone.
+                        <br><span style="font-style: italic; color: #555;">Funding:</span> National Agency for Research and Development of Chile (ANID), Doctoral Fellowship.
+                        <br><span style="font-style: italic; color: #555;">Honors:</span> Grade 4.7/5.0 (1st in thesis, 2nd overall).
+                    </li>
+                    <li>
+                        <strong>M.Sc. in Mathematical Sciences</strong> | <em>Universidad del Atlántico, Colombia</em> (2011 – 2014)
+                        <br><span style="font-style: italic; color: #555;">Thesis:</span> “On new families of generalized Apostol-type polynomials and their properties”
+                        <br><span style="font-style: italic; color: #555;">Supervisor:</span> Prof. Alejandro Urieles Guerrero.
+                    </li>
+                    <li>
+                        <strong>Bachelor’s Degree in High School Education (Major in Mathematics)</strong> | <em>Universidad del Atlántico, Colombia</em> (2005 – 2010)
+                        <br><span style="font-style: italic; color: #555;">Honors:</span> Grade 4.34/5.0 (1st overall).
+                        <br><span style="font-style: italic; color: #555;">Awards:</span> Undergraduate prize for best student of promotion with M.Sc. Fellowship.
+                    </li>
+                </ul>
+            </section>
 
-* Solid Mechanics and Materials Science.
-* Mechanical, Electrical Engineering, and Fluid Flow.
-* Nonlinear elasticity models, poroelastic plates, magnetoelastic structures, and junctions of ferroelectric materials.
+            <section id="projects">
+                <h2>💼 Academic Trajectory and Projects</h2>
+                <ul>
+                    <li>
+                        <strong>Guest Researcher (Postdoctoral Level)</strong> | <em>Umeå University, Sweden</em> (2026 – Present).
+                        <br><span style="color: #555;">Research on the derivation of the amplitude equation for the space-fractional Swift-Hohenberg equation via evolutionary $\Gamma$-convergence alongside Prof. Sebastian Throm.</span>
+                    </li>
+                    <li>
+                        <strong>Postdoctoral Researcher</strong> | <em>Universidad de O'Higgins (UOH), Chile</em> (2023 – 2026).
+                        <br><span style="color: #555;">Principal Investigator of the project <strong>Fondecyt Postdoctoral ANID N° 3230202</strong>, focused on two-dimensional models of thin structures with magnetoelasticity, poroelasticity, and rigid gel properties alongside Prof. Duvan Henao.</span>
+                    </li>
+                    <li>
+                        <strong>Postdoctoral Research Associate</strong> | <em>University of Zagreb, Croatia</em> (2021 – 2022).
+                        <br><span style="color: #555;">Project funded by the Croatian Science Foundation (HRZZ) centered on poroelastic plates via simultaneous homogenization and dimension reduction alongside Prof. Igor Velčić.</span>
+                    </li>
+                </ul>
+            </section>
 
----
+            <section id="tools">
+                <h2>🛠️ Scientific Computing and Tools</h2>
+                <p>I have experience developing scientific code applied to solving and simulating PDEs, variational methods, and dimensional reduction problems:</p>
+                <ul>
+                    <li><strong>Languages and Software:</strong> Advanced in Python, FreeFem++, MATLAB, Mathematica, and Wolfram Language.</li>
+                    <li><strong>Scientific Typography:</strong> Professional editing and typesetting in LaTeX and TeX.</li>
+                </ul>
+            </section>
 
-## 🎓 Education
+            <section id="teaching">
+                <h2>🎓 Teaching and Supervision</h2>
+                <p>I have lectured and led seminars at several international institutions:</p>
+                
+                <h3>Universidad de O'Higgins (Chile)</h3>
+                <ul>
+                    <li>Introduction to Discrete Mathematics (ING1111)</li>
+                    <li>Linear Algebra (ING1102)</li>
+                    <li>Organizer of the <em>Calculus of Variations & PDE Seminar</em>.</li>
+                    <li><strong>PhD Supervision:</strong> Active co-supervision of Ph.D. students (UOH), partial supervision for Patricio Morales-Rosales (Main supervisor: Prof. D. Henao).</li>
+                </ul>
 
-* **Ph.D. in Mathematics** | *Universidad de Concepción, Chile* (2015 – 2020)
-  * **Thesis:** *Variational limits of problems in junction domains for Ferroelectric and Hyperelastic materials by reduction of dimension*
-  * **Supervisors:** Prof. Rajesh Mahadevan, Prof. Ravi Prakash, Prof. Antonio Gaudiello, and Prof. Luciano Carbone.
-  * **Funding:** National Agency for Research and Development of Chile (ANID), Doctoral Fellowship.
-  * **Honors:** Grade 4.7/5.0 (1st in thesis, 2nd overall).
+                <h3>Universidad de Concepción (Chile)</h3>
+                <ul>
+                    <li>Real Analysis I (527203), Calculus I (527140/527147), Calculus II (527148), Complementary Calculus (521236), and Introduction to University Mathematics.</li>
+                    <li><em>Tutoring:</em> Linear Algebra, Real Analysis, and Calculus III.</li>
+                </ul>
 
-* **M.Sc. in Mathematical Sciences** | *Universidad del Atlántico, Colombia* (2011 – 2014)
-  * **Thesis:** *On new families of generalized Apostol-type polynomials and their properties*
-  * **Supervisor:** Prof. Alejandro Urieles Guerrero.
+                <h3>Universidad del Atlántico (Colombia)</h3>
+                <ul>
+                    <li>Calculus I & II, Differential Calculus, Foundations of Mathematics, and Advanced Trigonometry.</li>
+                    <li>Short courses on Orthogonal Polynomials.</li>
+                    <li><em>Supervision:</em> Full supervision for BSc. projects (Alex Aristizabal, Luis Ricardo Siado) and partial supervision for Master's project (William Ramirez-Quiroga).</li>
+                </ul>
+            </section>
+        </div>
 
-* **Bachelor’s Degree in High School Education (Major in Mathematics)** | *Universidad del Atlántico, Colombia* (2005 – 2010)
-  * **Honors:** Grade 4.34/5.0 (1st overall).
-  * **Awards:** Undergraduate prize for best student of promotion with M.Sc. Fellowship.
+        <div class="sidebar">
+            <div class="sidebar-box">
+                <img src="profile.jpg" alt="Pedro Hernández-Llanos" class="profile-img" onerror="this.style.display='none'">
+                <h3>Contact</h3>
+                <ul class="contact-list">
+                    <li>📧 <a href="mailto:phernandezllanos@gmail.com">phernandezllanos@gmail.com</a></li>
+                    <li>🆔 ORCID: <a href="https://orcid.org/0000-0001-5017-2108" target="_blank">0000-0001-5017-2108</a></li>
+                    <li>📝 zbMATH Open: <a href="https://zbmath.org/authors/?q=Pedro+Hernandez-Llanos" target="_blank">zbMATH Profile</a></li>
+                    <li>🔬 <a href="https://www.researchgate.net/profile/Pedro-Hernandez-Llanos" target="_blank">ResearchGate</a></li>
+                    <li>💼 <a href="https://www.linkedin.com/in/pedro-hernandez-llanos-254124160/" target="_blank">LinkedIn</a></li>
+                    <li>🌍 Website: <a href="https://sites.google.com/view/calcvar-uoh" target="_blank">CalcVar - UOH</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
----
+    <footer>
+        <p>&copy; 2026 Pedro Luis Hernández-Llanos.</p>
+    </footer>
 
-## 💼 Academic Trajectory and Projects
-
-* **Guest Researcher (Postdoctoral Level)** | *Umeå University, Sweden* (2026 – Present).
-  * Research on the derivation of the amplitude equation for the space-fractional Swift-Hohenberg equation via evolutionary $\Gamma$-convergence alongside Prof. Sebastian Throm.
-
-* **Postdoctoral Researcher** | *Universidad de O'Higgins (UOH), Chile* (2023 – 2026).
-  * Principal Investigator of the project **Fondecyt Postdoctoral ANID N° 3230202**, focused on two-dimensional models of thin structures with magnetoelasticity, poroelasticity, and rigid gel properties alongside Prof. Duvan Henao.
-
-* **Postdoctoral Research Associate** | *University of Zagreb, Croatia* (2021 – 2022).
-  * Project funded by the Croatian Science Foundation (HRZZ) centered on poroelastic plates via simultaneous homogenization and dimension reduction alongside Prof. Igor Velčić.
-
----
-
-## 🛠️ Scientific Computing and Tools
-
-I have experience developing scientific code applied to solving and simulating PDEs, variational methods, and dimensional reduction problems:
-
-* **Languages and Software:** Advanced in Python, FreeFem++, MATLAB, Mathematica, and Wolfram Language.
-* **Scientific Typography:** Professional editing and typesetting in LaTeX and TeX.
-
----
-
-## 📝 Selected Publications
-
-### Peer-Reviewed Journals
-
-* **M. Bužančić, P. Hernández-Llanos, I. Velčić, & J. Žubrinić** (2026). *Poroelastic plate model obtained by simultaneous homogenization and dimension reduction*. **Journal of Evolution Equations**, 26:12, 1-88. [DOI: 10.1007/s00028-025-01152-z](https://doi.org/10.1007/s00028-025-01152-z).
-* **L. Carrero & P. Hernández-Llanos** (2026). *Kirchhoff-type equations involving the fractional (p, q)-laplacian*. **Journal of Mathematical Analysis and Applications**, 558, 130449, 1-15. [DOI: 10.1016/j.jmaa.2026.130449](https://doi.org/10.1016/j.jmaa.2026.130449).
-* **T. Durante, L. Faella, P. Hernández-Llanos, & R. Prakash** (2025). *A homogenized bending shell theory for multiscale materials from 3D nonlinear elasticity*. **Journal of Elasticity**. [DOI: 10.1007/s10659-025-10154-4](https://doi.org/10.1007/s10659-025-10154-4).
-* **P. Hernández-Llanos** (2022). *Asymptotic analysis of a junction of hyperelastic rods*. **Asymptotic Analysis**, 126(3-4), 303-322. [DOI: 10.3233/ASY-211683](https://doi.org/10.3233/ASY-211683).
-* **L. Carbone, A. Gaudiello, & P. Hernández-Llanos** (2020). *T-junction of ferroelectric wires*. **ESAIM: Mathematical Modelling and Numerical Analysis (ESAIM: M2AN)**, 54(5), 1429-1463. [DOI: 10.1051/m2an/20200001](https://doi.org/10.1051/m2an/20200001).
-* **P. Hernández-Llanos, Y. Quintana, & A. Urieles** (2015). *About extensions of generalized apostol-type polynomials*. **Results in Mathematics**, 68, 203-225. [DOI: 10.1007/s00025-014-0430-2](https://doi.org/10.1007/s00025-014-0430-2).
-
-### Under Review / Submitted
-
-* *Junction of ferroelectric thin cylinders* (with L. Faella and R. Prakash) – Submitted to **ESAIM: COCV**. [arXiv:2311.00515](https://doi.org/10.48550/arXiv.2311.00515).
-* *Homogenized moderately wrinkled shell theory from 3d koiter's linear elasticity* (with R. Mahadevan and R. Prakash) – Submitted to **Journal of Elasticity**. [arXiv:2601.11384](https://arxiv.org/abs/2601.11384).
-
----
-
-## 🎓 Teaching and Supervision
-
-I have lectured and led seminars at several international institutions:
-
-* **Universidad de O'Higgins (Chile):** Introduction to Discrete Mathematics (ING1111), Linear Algebra (ING1102). Organizer of the *Calculus of Variations & PDE Seminar*.
-* **Universidad de Concepción (Chile):** Real Analysis I, Calculus I and II, Introduction to University Mathematics.
-* **Universidad del Atlántico (Colombia):** Differential Calculus, Foundations of Mathematics, Short courses on Orthogonal Polynomials.
-* **Supervision:** Active co-supervision of Ph.D. students (UOH), Master's, and undergraduate students (U. del Atlántico).
-
----
-
-## 🌐 Scientific Identifiers and Contact
-
-* 📧 **Email:** [phernandezllanos@gmail.com](mailto:phernandezllanos@gmail.com)
-* 💼 **LinkedIn:** [Pedro Hernández-Llanos](https://www.linkedin.com/in/pedro-hernandez-llanos-254124160/)
-* 🔬 **ResearchGate:** [ResearchGate Profile](https://www.researchgate.net/profile/Pedro-Hernandez-Llanos)
-* 📝 **zbMATH Open:** [zbMATH Publications](https://zbmath.org/authors/?q=Pedro+Hernandez-Llanos)
-* 🆔 **ORCID:** [0000-0001-5017-2108](https://orcid.org/0000-0001-5017-2108)
-* 🌍 **Personal Website:** [CalcVar - UOH](https://sites.google.com/view/calcvar-uoh)
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+</body>
+</html>
