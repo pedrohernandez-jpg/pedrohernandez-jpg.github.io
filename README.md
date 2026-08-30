@@ -67,8 +67,9 @@ I have experience developing scientific code applied to solving and simulating P
 * **L. Carbone, A. Gaudiello, & P. Hernández-Llanos** (2020). *T-junction of ferroelectric wires*. **ESAIM: Mathematical Modelling and Numerical Analysis (ESAIM: M2AN)**, 54(5), 1429-1463. [DOI: 10.1051/m2an/20200001](https://doi.org/10.1051/m2an/20200001).
 * **P. Hernández-Llanos, Y. Quintana, & A. Urieles** (2015). *About extensions of generalized apostol-type polynomials*. **Results in Mathematics**, 68, 203-225. [DOI: 10.1007/s00025-014-0430-2](https://doi.org/10.1007/s00025-014-0430-2).
 
-### Under Review / Submitted
+### Under Review / Preprints
 
+* **D. Henao, P. Hernández-Llanos, C. Roman, & X. Lamy** (2026). *Stability surface for confined hydrogel layer on substrates*. (To be submitted). [PDF Paper](https://pedrohernandez-jpg.github.io/Paper1version2026.pdf).
 * *Junction of ferroelectric thin cylinders* (with L. Faella and R. Prakash) – Submitted to **ESAIM: COCV**. [arXiv:2311.00515](https://doi.org/10.48550/arXiv.2311.00515).
 * *Homogenized moderately wrinkled shell theory from 3d koiter's linear elasticity* (with R. Mahadevan and R. Prakash) – Submitted to **Journal of Elasticity**. [arXiv:2601.11384](https://arxiv.org/abs/2601.11384).
 
