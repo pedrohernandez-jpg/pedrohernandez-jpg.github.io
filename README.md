@@ -75,6 +75,35 @@ I have experience developing scientific code applied to solving and simulating P
 
 ---
 
+## 💻 Codes
+
+Selected numerical simulations developed to solve and validate the variational and PDE models arising in my research, implemented in Python/FEniCS.
+
+**`GelStableConfiguration.py`** — Finite-element computation of stable equilibrium configurations of a confined hydrogel layer bonded to a rigid substrate, solved via an incremental softening (continuation) scheme with Newton's method under a penalty-based non-penetration constraint.
+
+<table>
+<tr>
+<td width="50%">
+<img src="geldeformation.png" alt="Stable gel configuration for mu bar = -0.0005" width="100%">
+
+**Stable Configuration — μ̄ = -0.0005**
+
+Successful computation of the stable configuration for the gel for L = 90.00 mm, d = 1.62 mm, φ₀ = 0.20 and μ̄ = -0.0005 under zero-displacement Dirichlet boundary conditions (**u** = **0**) along the bonded and debonded interfaces, supplemented by a penalty-based non-penetration condition (y + u_y ≥ 0) at the bottom surface. The nonlinear problem is solved via an incremental softening scheme across 16 load steps. Newton's method is executed with a convergence tolerance of tol = 10⁻³ (and tol = 10⁻⁶ for the final step), allowing a maximum of 100 Newton iterations per step and up to 500 iterations for the final stage. The color bar is adjusted to show in red the magnitude of the maximum displacement, which is 1.13 mm. This corresponds to the solution obtained when using the swelling equilibrium of the gel with a shear modulus of 0.1372 MPa as the initial approximation for a gel with shear modulus of 0.13721349978333722 MPa.
+
+</td>
+<td width="50%">
+<img src="geldeformation2.png" alt="Stable gel configuration for mu bar = -0.003" width="100%">
+
+**Stable Configuration — μ̄ = -0.003**
+
+Successful computation of the stable configuration for the gel for L = 90.00 mm, d = 1.62 mm, φ₀ = 0.20 and μ̄ = -0.003 under zero-displacement Dirichlet boundary conditions (**u** = **0**) along the bonded and debonded interfaces, supplemented by a penalty-based non-penetration condition (y + u_y ≥ 0) at the bottom surface. The nonlinear problem is solved via an incremental softening scheme across 16 load steps. Newton's method is executed with a convergence tolerance of tol = 10⁻³ (and tol = 10⁻⁶ for the final step), allowing a maximum of 100 Newton iterations per step and up to 500 iterations for the final stage. The color bar is adjusted to show in red the magnitude of the maximum displacement, which is 1.32 mm. This corresponds to the solution obtained when using the swelling equilibrium of the gel with a shear modulus of 0.1372 MPa as the initial approximation for a gel with shear modulus of 0.13721349978333722 MPa.
+
+</td>
+</tr>
+</table>
+
+---
+
 ## 🎓 Teaching and Supervision
 
 I have lectured and led seminars at several international institutions:

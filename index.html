@@ -108,6 +108,70 @@
         .contact-list a { color: #0066cc; text-decoration: none; }
         .contact-list a:hover { text-decoration: underline; }
         
+        .code-card {
+            background-color: #fff;
+            border: 1px solid #e1e4e8;
+            border-radius: 10px;
+            padding: 24px 28px;
+            margin-bottom: 30px;
+        }
+        .code-badge {
+            display: inline-block;
+            background-color: #eaf1fb;
+            color: #2b6cb0;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 5px;
+            margin-bottom: 12px;
+        }
+        .code-card h3.code-title {
+            font-size: 1.3rem;
+            color: #111;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+        }
+        .code-card p.code-desc {
+            color: #444;
+            margin-bottom: 20px;
+        }
+        .code-figure-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 700px) {
+            .code-figure-grid { grid-template-columns: 1fr; }
+        }
+        .code-figure {
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            padding: 14px;
+            background-color: #fafafa;
+        }
+        .code-figure img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+            background: #fff;
+        }
+        .code-figure-caption-label {
+            font-weight: 600;
+            color: #333;
+            margin-top: 12px;
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+        }
+        .code-figure-caption {
+            font-size: 0.8rem;
+            color: #666;
+            text-align: justify;
+            margin: 0;
+        }
+
         footer {
             max-width: 1000px;
             margin: 0 auto;
@@ -130,6 +194,7 @@
                 <a href="#education">Education</a>
                 <a href="#projects">Trajectory</a>
                 <a href="#tools">Tools</a>
+                <a href="#codes">Codes</a>
                 <a href="#teaching">Teaching</a>
             </nav>
         </div>
@@ -293,6 +358,34 @@
                     <li><strong>Languages and Software:</strong> Advanced in Python, FreeFem++, Matlab, Julia, R, Mathematica, and Wolfram Language.</li>
                     <li><strong>Scientific Typography:</strong> Professional editing and typesetting in LaTeX and TeX.</li>
                 </ul>
+            </section>
+
+            <section id="codes">
+                <h2>💻 Codes</h2>
+                <p>Selected numerical simulations developed to solve and validate the variational and PDE models arising in my research, implemented in Python/FEniCS.</p>
+
+                <div class="code-card">
+                    <span class="code-badge">Python</span>
+                    <h3 class="code-title">GelStableConfiguration.py</h3>
+                    <p class="code-desc">Finite-element computation of stable equilibrium configurations of a confined hydrogel layer bonded to a rigid substrate, solved via an incremental softening (continuation) scheme with Newton's method under a penalty-based non-penetration constraint.</p>
+
+                    <div class="code-figure-grid">
+                        <div class="code-figure">
+                            <img src="geldeformation.png" alt="Stable gel configuration for mu bar = -0.0005">
+                            <div class="code-figure-caption-label">Stable Configuration — $\overline{\mu}=-0.0005$</div>
+                            <p class="code-figure-caption">
+                                Successful computation of the stable configuration for the gel for $L=90.00$ mm, $d=1.62$ mm, $\phi_0=0.20$ and $\overline{\mu}=-0.0005$ under zero-displacement Dirichlet boundary conditions ($\mathbf{u}=\mathbf{0}$) along the bonded and debonded interfaces, supplemented by a penalty-based non-penetration condition ($y+u_y \ge 0$) at the bottom surface. The nonlinear problem is solved via an incremental softening scheme across 16 load steps. Newton's method is executed with a convergence tolerance of tol $=10^{-3}$ (and tol $=10^{-6}$ for the final step), allowing a maximum of 100 Newton iterations per step and up to 500 iterations for the final stage. The color bar is adjusted to show in red the magnitude of the maximum displacement, which is $1.13$ mm. This corresponds to the solution obtained when using the swelling equilibrium of the gel with a shear modulus of $0.1372$ MPa as the initial approximation for a gel with shear modulus of $0.13721349978333722$ MPa.
+                            </p>
+                        </div>
+                        <div class="code-figure">
+                            <img src="geldeformation2.png" alt="Stable gel configuration for mu bar = -0.003">
+                            <div class="code-figure-caption-label">Stable Configuration — $\overline{\mu}=-0.003$</div>
+                            <p class="code-figure-caption">
+                                Successful computation of the stable configuration for the gel for $L=90.00$ mm, $d=1.62$ mm, $\phi_0=0.20$ and $\overline{\mu}=-0.003$ under zero-displacement Dirichlet boundary conditions ($\mathbf{u}=\mathbf{0}$) along the bonded and debonded interfaces, supplemented by a penalty-based non-penetration condition ($y+u_y \ge 0$) at the bottom surface. The nonlinear problem is solved via an incremental softening scheme across 16 load steps. Newton's method is executed with a convergence tolerance of tol $=10^{-3}$ (and tol $=10^{-6}$ for the final step), allowing a maximum of 100 Newton iterations per step and up to 500 iterations for the final stage. The color bar is adjusted to show in red the magnitude of the maximum displacement, which is $1.32$ mm. This corresponds to the solution obtained when using the swelling equilibrium of the gel with a shear modulus of $0.1372$ MPa as the initial approximation for a gel with shear modulus of $0.13721349978333722$ MPa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section id="teaching">
