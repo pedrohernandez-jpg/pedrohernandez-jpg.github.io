@@ -139,11 +139,8 @@
         }
         .code-figure-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             gap: 20px;
-        }
-        @media (max-width: 700px) {
-            .code-figure-grid { grid-template-columns: 1fr; }
         }
         .code-figure {
             border: 1px solid #eaeaea;
@@ -478,6 +475,20 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="code-card">
+                    <span class="code-badge">FreeFEM++</span>
+                    <h3 class="code-title">DarcyMixedFracture2d.edp</h3>
+                    <p class="code-desc">Purpose of the code: Numerical solution of a two-dimensional Darcy problem in mixed formulation on a fracture-network domain with piecewise-constant permeability coefficients. The Darcy flux $u_h$ and pressure $p_h$ are computed using the Raviart&ndash;Thomas $RT_0$ finite element space for the flux and the piecewise-constant $P_0$ space for the pressure. The code accounts for different material properties inside and outside the fracture and imposes prescribed pressure boundary conditions on the left and bottom boundaries.</p>
+
+                    <div class="code-figure">
+                        <img src="Darcy-mixto-fracture_aprox.png" alt="Approximate solution for the Darcy mixed problem on a fracture-network domain">
+                        <div class="code-figure-caption-label">Approximate solution</div>
+                        <p class="code-figure-caption">
+                            Mixed finite element approximation of the Darcy flux $u_h$ and pressure $p_h$ on a fracture-network domain, obtained with the Raviart&ndash;Thomas $RT_0$ finite element space for the flux and the piecewise-constant $P_0$ finite element space for the pressure. Piecewise-constant permeability coefficients are imposed with different values inside and outside the fracture, and prescribed pressure boundary conditions are enforced on the left and bottom boundaries.
+                        </p>
+                    </div>
+                </div>
             </section>
 
             <section id="teaching">
@@ -527,6 +538,15 @@
         <p>&copy; 2026 Pedro Luis Hernández-Llanos.</p>
     </footer>
 
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$','$'], ['\\(','\\)']],
+                displayMath: [['$$','$$'], ['\\[','\\]']],
+                processEscapes: true
+            }
+        });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 </body>
 </html>

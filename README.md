@@ -81,101 +81,62 @@ Selected numerical simulations developed to solve and validate the variational a
 
 **`GelStableConfiguration.py`** — Finite-element computation of stable equilibrium configurations of a confined hydrogel layer bonded to a rigid substrate, solved via an incremental softening (continuation) scheme with Newton's method under a penalty-based non-penetration constraint.
 
-<table>
-<tr>
-<td width="50%">
 <img src="geldeformation.png" alt="Stable gel configuration for mu bar = -0.0005" width="100%">
 
 **Stable Configuration — μ̄ = -0.0005**
 
 Successful computation of the stable configuration for the gel for L = 90.00 mm, d = 1.62 mm, φ₀ = 0.20 and μ̄ = -0.0005 under zero-displacement Dirichlet boundary conditions (**u** = **0**) along the bonded and debonded interfaces, supplemented by a penalty-based non-penetration condition (y + u_y ≥ 0) at the bottom surface. The nonlinear problem is solved via an incremental softening scheme across 16 load steps. Newton's method is executed with a convergence tolerance of tol = 10⁻³ (and tol = 10⁻⁶ for the final step), allowing a maximum of 100 Newton iterations per step and up to 500 iterations for the final stage. The color bar is adjusted to show in red the magnitude of the maximum displacement, which is 1.13 mm. This corresponds to the solution obtained when using the swelling equilibrium of the gel with a shear modulus of 0.1372 MPa as the initial approximation for a gel with shear modulus of 0.13721349978333722 MPa.
 
-</td>
-<td width="50%">
 <img src="geldeformation2.png" alt="Stable gel configuration for mu bar = -0.003" width="100%">
 
 **Stable Configuration — μ̄ = -0.003**
 
 Successful computation of the stable configuration for the gel for L = 90.00 mm, d = 1.62 mm, φ₀ = 0.20 and μ̄ = -0.003 under zero-displacement Dirichlet boundary conditions (**u** = **0**) along the bonded and debonded interfaces, supplemented by a penalty-based non-penetration condition (y + u_y ≥ 0) at the bottom surface. The nonlinear problem is solved via an incremental softening scheme across 16 load steps. Newton's method is executed with a convergence tolerance of tol = 10⁻³ (and tol = 10⁻⁶ for the final step), allowing a maximum of 100 Newton iterations per step and up to 500 iterations for the final stage. The color bar is adjusted to show in red the magnitude of the maximum displacement, which is 1.32 mm. This corresponds to the solution obtained when using the swelling equilibrium of the gel with a shear modulus of 0.1372 MPa as the initial approximation for a gel with shear modulus of 0.13721349978333722 MPa.
 
-</td>
-</tr>
-</table>
-
 **`gels-testCluster-NoChemicalPotential.py`** — Finite-element computation of the energy density of a confined hydrogel layer bonded to a rigid substrate, solved via an incremental softening (continuation) scheme with Newton's method under a penalty-based non-penetration constraint.
 
-<table>
-<tr>
-<td width="50%">
 <img src="geldebonding.png" alt="Stable gel configuration for mu bar = -0.00" width="100%">
 
 **Stable Configuration — μ̄ = 0.00**
 
-Successful computation of the energy density for a gel for L = 90.00 mm, d = 1.62 mm, w =15.00 mm φ₀ = 0.20 and μ̄ = -0.0005 under zero-displacement Dirichlet boundary conditions (**u** = **0**) along the bonded and debonded interfaces, supplemented by a penalty-based non-penetration condition (y + u_y ≥ 0) at the bottom surface. The nonlinear problem is solved via an incremental softening scheme across 16 load steps. Newton's method is executed with a convergence tolerance of tol = 10⁻³ (and tol = 10⁻⁶ for the final step), allowing a maximum of 100 Newton iterations per step and up to 500 iterations for the final stage. The color bar is adjusted to show in red the magnitude of the maximum density energy, which is 152 mJ. 
+Successful computation of the energy density for a gel for L = 90.00 mm, d = 1.62 mm, w =15.00 mm φ₀ = 0.20 and μ̄ = -0.0005 under zero-displacement Dirichlet boundary conditions (**u** = **0**) along the bonded and debonded interfaces, supplemented by a penalty-based non-penetration condition (y + u_y ≥ 0) at the bottom surface. The nonlinear problem is solved via an incremental softening scheme across 16 load steps. Newton's method is executed with a convergence tolerance of tol = 10⁻³ (and tol = 10⁻⁶ for the final step), allowing a maximum of 100 Newton iterations per step and up to 500 iterations for the final stage. The color bar is adjusted to show in red the magnitude of the maximum density energy, which is 152 mJ.
 
-</td>
-<td width="50%">
 <img src="geldebonding2.png" alt="Stable gel configuration for mu bar = -0.00" width="100%">
 
 **Stable Configuration — μ̄ = -0.00**
 
 Successful computation of the energy density for a gel for L = 90.00 mm, d = 1.62 mm, w =15.00 mm φ₀ = 0.20 and μ̄ = -0.0005 under zero-displacement Dirichlet boundary conditions (**u** = **0**) along the bonded and debonded interfaces, supplemented by a penalty-based non-penetration condition (y + u_y ≥ 0) at the bottom surface. The nonlinear problem is solved via an incremental softening scheme across 16 load steps. Newton's method is executed with a convergence tolerance of tol = 10⁻³ (and tol = 10⁻⁶ for the final step), allowing a maximum of 100 Newton iterations per step and up to 500 iterations for the final stage. The color bar is adjusted to show in red the magnitude of the maximum density energy, which is 152 mJ.
 
-</td>
-</tr>
-</table>
-
 **`DarcyPrimal2d.edp`** — Purpose of the code: Numerical verification of the finite element approximation for a two-dimensional Darcy problem in primal formulation. The code solves the problem using continuous piecewise-linear ($P_1$) finite elements, compares the numerical solution with the exact analytical solution, and evaluates the $H^1$-error and convergence rate under successive mesh refinements.
 
-<table>
-<tr>
-<td width="50%">
 <video src="DarcyPrimal2d_exact.mp4" width="100%" autoplay loop muted playsinline controls></video>
 
 **Exact solution**
 
 Analytical pressure field $p(x,y)=\cos(\pi x)\sin(\pi y),$ used as the reference solution for the two-dimensional Darcy problem.
 
-</td>
-<td width="50%">
 <video src="DarcyPrimal2d_approx.mp4" width="100%" autoplay loop muted playsinline controls></video>
 
 **Approximate solution**
 
 Finite element approximation of the pressure field obtained using continuous piecewise-linear ($P_1$) finite elements on a triangular mesh.
 
-</td>
-</tr>
-</table>
-
 **`DarcyPrimal3d.edp`** — Purpose of the code: Numerical verification of the finite element approximation for a three-dimensional Darcy problem in primal formulation. The code solves the problem using continuous piecewise-linear ($P_1$) finite elements on a tetrahedral mesh, compares the numerical solution with the exact analytical solution, and evaluates the $H^1$-error and convergence rate under successive mesh refinements.
 
-<table>
-<tr>
-<td width="50%">
 <video src="Darcy-3D-primal_exact.mp4" width="100%" autoplay loop muted playsinline controls></video>
 
 **Exact solution**
 
 Analytical pressure field $p(x,y,z)=\cos(\pi x)\sin(\pi y)e^z,$ used as the reference solution for the three-dimensional Darcy problem.
 
-</td>
-<td width="50%">
 <video src="Darcy-3D-primal_approx.mp4" width="100%" autoplay loop muted playsinline controls></video>
 
 **Approximate solution**
 
 Finite element approximation of the pressure field obtained using continuous piecewise-linear ($P_1$) finite elements on a tetrahedral mesh of the three-dimensional domain.
 
-</td>
-</tr>
-</table>
-
 **`DarcyMixed2d.edp`** — Purpose of the code: Numerical verification of the mixed finite element approximation for a two-dimensional Darcy problem. The code simultaneously computes the Darcy flux and pressure using the Raviart–Thomas $RT_0$ finite element space for the flux and the piecewise-constant $P_0$ space for the pressure. The numerical solution is compared with the exact solution, and the errors and convergence rates are evaluated in the $H(\mathrm{div})$ norm for the flux and the $L^2$ norm for the pressure.
 
-<table>
-<tr>
-<td width="50%">
 <video src="Darcy-mixto_exact_u.mp4" width="100%" autoplay loop muted playsinline controls></video>
 
 **Exact solution**
@@ -186,17 +147,19 @@ $$\mathbf{u}(x,y)=\left[\frac{\pi}{D}\sin(\pi x)\sin(\pi y),\ -\frac{\pi}{D}\cos
 
 with pressure field $p(x,y)=\cos(\pi x)\sin(\pi y)$, used as reference solutions for the mixed Darcy problem.
 
-</td>
-<td width="50%">
 <video src="Darcy-mixto_aprox_uh.mp4" width="100%" autoplay loop muted playsinline controls></video>
 
 **Approximate solution**
 
 Mixed finite element approximation of the Darcy flux and pressure, using the Raviart–Thomas $RT_0$ finite element space for the flux and the piecewise-constant $P_0$ finite element space for the pressure.
 
-</td>
-</tr>
-</table>
+**`DarcyMixedFracture2d.edp`** — Purpose of the code: Numerical solution of a two-dimensional Darcy problem in mixed formulation on a fracture-network domain with piecewise-constant permeability coefficients. The Darcy flux $u_h$ and pressure $p_h$ are computed using the Raviart–Thomas $RT_0$ finite element space for the flux and the piecewise-constant $P_0$ space for the pressure. The code accounts for different material properties inside and outside the fracture and imposes prescribed pressure boundary conditions on the left and bottom boundaries.
+
+<img src="Darcy-mixto-fracture_aprox.png" alt="Approximate solution for the Darcy mixed problem on a fracture-network domain" width="70%">
+
+**Approximate solution**
+
+Mixed finite element approximation of the Darcy flux $u_h$ and pressure $p_h$ on a fracture-network domain, obtained with the Raviart–Thomas $RT_0$ finite element space for the flux and the piecewise-constant $P_0$ finite element space for the pressure. Piecewise-constant permeability coefficients are imposed with different values inside and outside the fracture, and prescribed pressure boundary conditions are enforced on the left and bottom boundaries.
 
 ---
 
