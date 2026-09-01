@@ -2,6 +2,8 @@
 
 Welcome to my GitHub profile! I am a pure and applied mathematician whose research focuses on the interaction of the **Calculus of Variations**, **Partial Differential Equations (PDEs)**, and solid mechanics, with applications to Materials Science and Continuum Mechanics. The use of variational methods is a common theme throughout my work. Specifically, I specialize in the **Homogenization** of problems arising in the context of PDEs with **Thin structures** and **Multistructures**. I am interested in developing new theories for **simultaneous homogenization and dimension reduction** (multiscale convergence, $\Gamma$-convergence, and the periodic unfolding method) by combining variational techniques, operator theory, and geometric measure theory. These theories find direct applications in Mechanical and Electrical Engineering, as well as Fluid Flow, to name a few.
 
+Alongside my theoretical research, I have experience in **Computational Mechanics** and **Numerical Methods for PDEs**, particularly the **Finite Element Method (FEM)**. I have worked with scientific computing tools including **Python**, **FreeFEM++**, **Matlab**, **Julia**, **R** and the finite element software **NGSolve**, applying numerical techniques to the simulation and analysis of complex physical systems. My current interests also include **computational modeling of nonlinear materials** and **soft matter systems**, where analytical and numerical approaches are combined to investigate **stability phenomena** and multiscale behavior.
+
 I am currently a **Guest Postdoctoral Researcher** working with Prof. Sebastian Throm in the Mathematical Modelling and Analysis Group within the Department of Mathematics and Mathematical Statistics at **Umeå University**, Sweden.
 
 ---
