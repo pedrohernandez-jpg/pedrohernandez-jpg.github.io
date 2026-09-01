@@ -130,7 +130,7 @@ Successful computation of the energy density for a gel for L = 90.00 mm, d = 1.6
 <table>
 <tr>
 <td width="50%">
-<video src="DarcyPrimal2d_exact.avi" width="100%" autoplay loop muted playsinline controls></video>
+<video src="DarcyPrimal2d_exact.mp4" width="100%" autoplay loop muted playsinline controls></video>
 
 **Exact solution**
 
@@ -138,7 +138,7 @@ Analytical pressure field $p(x,y)=\cos(\pi x)\sin(\pi y),$ used as the reference
 
 </td>
 <td width="50%">
-<video src="DarcyPrimal2d_approx.avi" width="100%" autoplay loop muted playsinline controls></video>
+<video src="DarcyPrimal2d_approx.mp4" width="100%" autoplay loop muted playsinline controls></video>
 
 **Approximate solution**
 
