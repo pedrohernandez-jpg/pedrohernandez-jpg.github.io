@@ -36,7 +36,7 @@ My research addresses the development of new theories for simultaneous homogeniz
 
 ## 💼 Academic Trajectory and Projects
 
-* **Guest Researcher (Postdoctoral Level)** | *Umeå University, Sweden* (2026 – Present).
+* **Guest Postdoctoral Researcher** | *Umeå University, Sweden* (2026 – Present).
   * Research on the derivation of the amplitude equation for the space-fractional Swift-Hohenberg equation via evolutionary $\Gamma$-convergence alongside Prof. Sebastian Throm.
 
 * **Postdoctoral Researcher** | *Universidad de O'Higgins (UOH), Chile* (2023 – 2026).
