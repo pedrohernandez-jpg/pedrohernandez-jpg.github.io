@@ -10,11 +10,12 @@ I am currently a **Guest Postdoctoral Researcher** working with Prof. Sebastian 
 
 ## 🔬 Research Interests
 
-My research addresses the development of new theories for simultaneous homogenization and dimension reduction (multiscale convergence, $\Gamma$-convergence, and the periodic unfolding method) using techniques from the calculus of variations, operator theory, and geometric measure theory. These theories have direct applications in:
-
-* Solid Mechanics and Materials Science.
-* Mechanical, Electrical Engineering, and Fluid Flow.
-* Nonlinear elasticity models, poroelastic plates, magnetoelastic structures, and junctions of ferroelectric materials.
+* **Solid Mechanics.**
+* **Materials Science.**
+* **Partial Differential Equations (PDEs)** in Mechanics, Electrical Engineering, and Fluid Mechanics.
+* **Calculus of Variations**, with applications to multistructures and junctions.
+* **Nonlinear hyperelastic, poroelastic, magnetoelastic, and ferroelectric materials.**
+* **Hydrogels and soft materials.**
 
 ---
 
