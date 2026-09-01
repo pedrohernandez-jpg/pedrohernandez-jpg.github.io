@@ -102,6 +102,29 @@ Successful computation of the stable configuration for the gel for L = 90.00 mm,
 </tr>
 </table>
 
+**`gels-testCluster-NoChemicalPotential.py`** — Finite-element computation of the energy density of a confined hydrogel layer bonded to a rigid substrate, solved via an incremental softening (continuation) scheme with Newton's method under a penalty-based non-penetration constraint.
+
+<table>
+<tr>
+<td width="50%">
+<img src="geldebonding.png" alt="Stable gel configuration for mu bar = -0.00" width="100%">
+
+**Stable Configuration — μ̄ = 0.00**
+
+Successful computation of the energy density for a gel for L = 90.00 mm, d = 1.62 mm, w =15.00 mm φ₀ = 0.20 and μ̄ = -0.0005 under zero-displacement Dirichlet boundary conditions (**u** = **0**) along the bonded and debonded interfaces, supplemented by a penalty-based non-penetration condition (y + u_y ≥ 0) at the bottom surface. The nonlinear problem is solved via an incremental softening scheme across 16 load steps. Newton's method is executed with a convergence tolerance of tol = 10⁻³ (and tol = 10⁻⁶ for the final step), allowing a maximum of 100 Newton iterations per step and up to 500 iterations for the final stage. The color bar is adjusted to show in red the magnitude of the maximum density energy, which is 152 mJ. 
+
+</td>
+<td width="50%">
+<img src="geldebonding2.png" alt="Stable gel configuration for mu bar = -0.00" width="100%">
+
+**Stable Configuration — μ̄ = -0.00**
+
+Successful computation of the energy density for a gel for L = 90.00 mm, d = 1.62 mm, w =15.00 mm φ₀ = 0.20 and μ̄ = -0.0005 under zero-displacement Dirichlet boundary conditions (**u** = **0**) along the bonded and debonded interfaces, supplemented by a penalty-based non-penetration condition (y + u_y ≥ 0) at the bottom surface. The nonlinear problem is solved via an incremental softening scheme across 16 load steps. Newton's method is executed with a convergence tolerance of tol = 10⁻³ (and tol = 10⁻⁶ for the final step), allowing a maximum of 100 Newton iterations per step and up to 500 iterations for the final stage. The color bar is adjusted to show in red the magnitude of the maximum density energy, which is 152 mJ.
+
+</td>
+</tr>
+</table>
+
 ---
 
 ## 🎓 Teaching and Supervision
