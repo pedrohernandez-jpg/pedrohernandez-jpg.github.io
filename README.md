@@ -69,9 +69,9 @@ I have experience developing scientific code applied to solving and simulating P
 
 ### Under Review / Preprints
 
-* **D. Henao, P. Hernández-Llanos, C. Roman, & X. Lamy** (2026). *Stability surface for confined hydrogel layer on substrates*. (To be submitted). [PDF Paper](https://pedrohernandez-jpg.github.io/Paper1version2026.pdf).
+* **D. Henao, P. Hernández-Llanos, C. Roman, & X. Lamy** (2026). *Stability surface for confined hydrogel layer on substrates*. (To be submitted to **SIAM J. Appl. Anal.**). [PDF Paper](https://pedrohernandez-jpg.github.io/Paper1version2026.pdf).
 * *Junction of ferroelectric thin cylinders* (with L. Faella and R. Prakash) – Submitted to **ESAIM: COCV**. [arXiv:2311.00515](https://doi.org/10.48550/arXiv.2311.00515).
-* *Homogenized moderately wrinkled shell theory from 3d koiter's linear elasticity* (with R. Mahadevan and R. Prakash) – Submitted to **Journal of Elasticity**. [arXiv:2601.11384](https://arxiv.org/abs/2601.11384).
+* *Homogenized moderately wrinkled shell theory from 3d koiter's linear elasticity* (with R. Mahadevan and R. Prakash) – Submitted to **Mathematical Models and Methods in Applied Sciences**. [arXiv:2601.11384](https://arxiv.org/abs/2601.11384).
 
 ---
 
