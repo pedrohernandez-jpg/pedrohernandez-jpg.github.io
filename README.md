@@ -97,15 +97,15 @@ Successful computation of the stable configuration for the gel for L = 90.00 mm,
 
 <img src="geldebonding.png" alt="Stable gel configuration for mu bar = -0.00" width="100%">
 
-**Stable Configuration — μ̄ = 0.00**
+**Stable Configuration — μ̄ = 0**
 
-Successful computation of the energy density for a gel for L = 90.00 mm, d = 1.62 mm, w =15.00 mm φ₀ = 0.20 and μ̄ = -0.0005 under zero-displacement Dirichlet boundary conditions (**u** = **0**) along the bonded and debonded interfaces, supplemented by a penalty-based non-penetration condition (y + u_y ≥ 0) at the bottom surface. The nonlinear problem is solved via an incremental softening scheme across 16 load steps. Newton's method is executed with a convergence tolerance of tol = 10⁻³ (and tol = 10⁻⁶ for the final step), allowing a maximum of 100 Newton iterations per step and up to 500 iterations for the final stage. The color bar is adjusted to show in red the magnitude of the maximum density energy, which is 152 mJ.
+Successful computation of the energy density for a gel for L = 90.00 mm, d = 1.62 mm, w =15.00 mm φ₀ = 0.20 and μ̄ = 0.00 under zero-displacement Dirichlet boundary conditions (**u** = **0**) along the bonded and debonded interfaces, supplemented by a penalty-based non-penetration condition (y + u_y ≥ 0) at the bottom surface. The nonlinear problem is solved via an incremental softening scheme across 16 load steps. Newton's method is executed with a convergence tolerance of tol = 10⁻³ (and tol = 10⁻⁶ for the final step), allowing a maximum of 100 Newton iterations per step and up to 500 iterations for the final stage. The color bar is adjusted to show in red the magnitude of the maximum density energy, which is 152 mJ.
 
 <img src="geldebonding2.png" alt="Stable gel configuration for mu bar = -0.00" width="100%">
 
-**Stable Configuration — μ̄ = -0.00**
+**Stable Configuration — μ̄ = 0**
 
-Successful computation of the energy density for a gel for L = 90.00 mm, d = 1.62 mm, w =15.00 mm φ₀ = 0.20 and μ̄ = -0.0005 under zero-displacement Dirichlet boundary conditions (**u** = **0**) along the bonded and debonded interfaces, supplemented by a penalty-based non-penetration condition (y + u_y ≥ 0) at the bottom surface. The nonlinear problem is solved via an incremental softening scheme across 16 load steps. Newton's method is executed with a convergence tolerance of tol = 10⁻³ (and tol = 10⁻⁶ for the final step), allowing a maximum of 100 Newton iterations per step and up to 500 iterations for the final stage. The color bar is adjusted to show in red the magnitude of the maximum density energy, which is 152 mJ.
+Successful computation of the energy density for a gel for L = 90.00 mm, d = 1.62 mm, w =15.00 mm φ₀ = 0.20 and μ̄ = 0.00 under zero-displacement Dirichlet boundary conditions (**u** = **0**) along the bonded and debonded interfaces, supplemented by a penalty-based non-penetration condition (y + u_y ≥ 0) at the bottom surface. The nonlinear problem is solved via an incremental softening scheme across 16 load steps. Newton's method is executed with a convergence tolerance of tol = 10⁻³ (and tol = 10⁻⁶ for the final step), allowing a maximum of 100 Newton iterations per step and up to 500 iterations for the final stage. The color bar is adjusted to show in red the magnitude of the maximum density energy, which is 152 mJ.
 
 **`DarcyPrimal2d.edp`** — Purpose of the code: Numerical verification of the finite element approximation for a two-dimensional Darcy problem in primal formulation. The code solves the problem using continuous piecewise-linear ($P_1$) finite elements, compares the numerical solution with the exact analytical solution, and evaluates the $H^1$-error and convergence rate under successive mesh refinements.
 
