@@ -432,6 +432,29 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="code-card">
+                    <span class="code-badge">FreeFEM++</span>
+                    <h3 class="code-title">DarcyPrimal3d.edp</h3>
+                    <p class="code-desc">Purpose of the code: Numerical verification of the finite element approximation for a three-dimensional Darcy problem in primal formulation. The code solves the problem using continuous piecewise-linear ($P_1$) finite elements on a tetrahedral mesh, compares the numerical solution with the exact analytical solution, and evaluates the $H^1$-error and convergence rate under successive mesh refinements.</p>
+
+                    <div class="code-figure-grid">
+                        <div class="code-figure">
+                            <video src="Darcy-3D-primal_exact.mp4" autoplay loop muted playsinline controls style="width:100%; border-radius:4px; background:#fff;"></video>
+                            <div class="code-figure-caption-label">Exact solution</div>
+                            <p class="code-figure-caption">
+                                Analytical pressure field $p(x,y,z)=\cos(\pi x)\sin(\pi y)e^z,$ used as the reference solution for the three-dimensional Darcy problem.
+                            </p>
+                        </div>
+                        <div class="code-figure">
+                            <video src="Darcy-3D-primal_approx.mp4" autoplay loop muted playsinline controls style="width:100%; border-radius:4px; background:#fff;"></video>
+                            <div class="code-figure-caption-label">Approximate solution</div>
+                            <p class="code-figure-caption">
+                                Finite element approximation of the pressure field obtained using continuous piecewise-linear ($P_1$) finite elements on a tetrahedral mesh of the three-dimensional domain.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section id="teaching">

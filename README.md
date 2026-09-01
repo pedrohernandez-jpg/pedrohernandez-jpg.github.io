@@ -148,6 +148,29 @@ Finite element approximation of the pressure field obtained using continuous pie
 </tr>
 </table>
 
+**`DarcyPrimal3d.edp`** — Purpose of the code: Numerical verification of the finite element approximation for a three-dimensional Darcy problem in primal formulation. The code solves the problem using continuous piecewise-linear ($P_1$) finite elements on a tetrahedral mesh, compares the numerical solution with the exact analytical solution, and evaluates the $H^1$-error and convergence rate under successive mesh refinements.
+
+<table>
+<tr>
+<td width="50%">
+<video src="Darcy-3D-primal_exact.mp4" width="100%" autoplay loop muted playsinline controls></video>
+
+**Exact solution**
+
+Analytical pressure field $p(x,y,z)=\cos(\pi x)\sin(\pi y)e^z,$ used as the reference solution for the three-dimensional Darcy problem.
+
+</td>
+<td width="50%">
+<video src="Darcy-3D-primal_approx.mp4" width="100%" autoplay loop muted playsinline controls></video>
+
+**Approximate solution**
+
+Finite element approximation of the pressure field obtained using continuous piecewise-linear ($P_1$) finite elements on a tetrahedral mesh of the three-dimensional domain.
+
+</td>
+</tr>
+</table>
+
 ---
 
 ## 🎓 Teaching and Supervision
