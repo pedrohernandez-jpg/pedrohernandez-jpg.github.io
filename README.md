@@ -77,7 +77,7 @@ I have experience developing scientific code applied to solving and simulating P
 
 ## 💻 Codes
 
-Selected numerical simulations developed to solve and validate the variational and PDE models arising in my research, implemented in Python/FEniCS.
+Selected numerical simulations developed to solve and validate the variational and PDE models arising in my research, implemented in Python, FreeFem++, FEniCS, Matlab, Julia, R, Mathematica, and Wolfram.
 
 **`GelStableConfiguration.py`** — Finite-element computation of stable equilibrium configurations of a confined hydrogel layer bonded to a rigid substrate, solved via an incremental softening (continuation) scheme with Newton's method under a penalty-based non-penetration constraint.
 
