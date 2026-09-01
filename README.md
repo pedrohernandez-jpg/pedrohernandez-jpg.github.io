@@ -6,6 +6,12 @@ Alongside my theoretical research, I have experience in **Computational Mechanic
 
 I am currently a **Guest Postdoctoral Researcher** working with Prof. Sebastian Throm in the Mathematical Modelling and Analysis Group within the Department of Mathematics and Mathematical Statistics at **Umeå University**, Sweden.
 
+<p style="font-size:1.15rem; line-height:1.5;">
+<b>Guest Postdoctoral Researcher</b> at <a href="https://www.umu.se/institutionen-for-matematik-och-matematisk-statistik">Department of Mathematics and Mathematical Statistics</a><br>
+MIT-huset, plan 3, Matematik och matematisk statistik, Office MIT.D.326<br>
+Umeå universitet, 901 87 Umeå, Sweden
+</p>
+
 ---
 
 ## 🔬 Research Interests
