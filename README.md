@@ -163,7 +163,7 @@ Mixed finite element approximation of the Darcy flux $u_h$ and pressure $p_h$ on
 
 **`NS-mixto-cavidad-2D.edp`** — Purpose of the code: Numerical solution of the two-dimensional stationary Navier–Stokes problem in mixed formulation for a cavity flow with two circular obstacles. The code approximates the velocity field and the pseudo-stress using mixed finite elements and employs a Newton iteration strategy to handle the nonlinear convective term. The computation also recovers the pressure field through a post-processing formula and exports the numerical solution for visualization in ParaView.
 
-<img src="Navier-stokes flow 2 obstacles.png" alt="Navier-Stokes cavity flow with two circular obstacles" width="100%">
+<img src="Navier-stokes-flow-2-obstacles.png" alt="Navier-Stokes cavity flow with two circular obstacles" width="100%">
 
 **Numerical solution**
 
