@@ -409,6 +409,29 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="code-card">
+                    <span class="code-badge">FreeFEM++</span>
+                    <h3 class="code-title">DarcyPrimal2d.edp</h3>
+                    <p class="code-desc">Purpose of the code: Numerical verification of the finite element approximation for a two-dimensional Darcy problem in primal formulation. The code solves the problem using continuous piecewise-linear ($P_1$) finite elements, compares the numerical solution with the exact analytical solution, and evaluates the $H^1$-error and convergence rate under successive mesh refinements.</p>
+
+                    <div class="code-figure-grid">
+                        <div class="code-figure">
+                            <video src="DarcyPrimal2d_exact.avi" autoplay loop muted playsinline controls style="width:100%; border-radius:4px; background:#fff;"></video>
+                            <div class="code-figure-caption-label">Exact solution</div>
+                            <p class="code-figure-caption">
+                                Analytical pressure field $p(x,y)=\cos(\pi x)\sin(\pi y),$ used as the reference solution for the two-dimensional Darcy problem.
+                            </p>
+                        </div>
+                        <div class="code-figure">
+                            <video src="DarcyPrimal2d_approx.avi" autoplay loop muted playsinline controls style="width:100%; border-radius:4px; background:#fff;"></video>
+                            <div class="code-figure-caption-label">Approximate solution</div>
+                            <p class="code-figure-caption">
+                                Finite element approximation of the pressure field obtained using continuous piecewise-linear ($P_1$) finite elements on a triangular mesh.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section id="teaching">

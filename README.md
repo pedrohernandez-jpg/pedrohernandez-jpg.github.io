@@ -125,6 +125,29 @@ Successful computation of the energy density for a gel for L = 90.00 mm, d = 1.6
 </tr>
 </table>
 
+**`DarcyPrimal2d.edp`** — Purpose of the code: Numerical verification of the finite element approximation for a two-dimensional Darcy problem in primal formulation. The code solves the problem using continuous piecewise-linear ($P_1$) finite elements, compares the numerical solution with the exact analytical solution, and evaluates the $H^1$-error and convergence rate under successive mesh refinements.
+
+<table>
+<tr>
+<td width="50%">
+<video src="DarcyPrimal2d_exact.avi" width="100%" autoplay loop muted playsinline controls></video>
+
+**Exact solution**
+
+Analytical pressure field $p(x,y)=\cos(\pi x)\sin(\pi y),$ used as the reference solution for the two-dimensional Darcy problem.
+
+</td>
+<td width="50%">
+<video src="DarcyPrimal2d_approx.avi" width="100%" autoplay loop muted playsinline controls></video>
+
+**Approximate solution**
+
+Finite element approximation of the pressure field obtained using continuous piecewise-linear ($P_1$) finite elements on a triangular mesh.
+
+</td>
+</tr>
+</table>
+
 ---
 
 ## 🎓 Teaching and Supervision
