@@ -455,6 +455,29 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="code-card">
+                    <span class="code-badge">FreeFEM++</span>
+                    <h3 class="code-title">DarcyMixed2d.edp</h3>
+                    <p class="code-desc">Purpose of the code: Numerical verification of the mixed finite element approximation for a two-dimensional Darcy problem. The code simultaneously computes the Darcy flux and pressure using the Raviart&ndash;Thomas $RT_0$ finite element space for the flux and the piecewise-constant $P_0$ space for the pressure. The numerical solution is compared with the exact solution, and the errors and convergence rates are evaluated in the $H(\mathrm{div})$ norm for the flux and the $L^2$ norm for the pressure.</p>
+
+                    <div class="code-figure-grid">
+                        <div class="code-figure">
+                            <video src="Darcy-mixto_exact_u.mp4" autoplay loop muted playsinline controls style="width:100%; border-radius:4px; background:#fff;"></video>
+                            <div class="code-figure-caption-label">Exact solution</div>
+                            <p class="code-figure-caption">
+                                Analytical flux field $$\mathbf{u}(x,y)=\left[\frac{\pi}{D}\sin(\pi x)\sin(\pi y),\ -\frac{\pi}{D}\cos(\pi x)\cos(\pi y)\right],$$ with pressure field $p(x,y)=\cos(\pi x)\sin(\pi y)$, used as reference solutions for the mixed Darcy problem.
+                            </p>
+                        </div>
+                        <div class="code-figure">
+                            <video src="Darcy-mixto_aprox_uh.mp4" autoplay loop muted playsinline controls style="width:100%; border-radius:4px; background:#fff;"></video>
+                            <div class="code-figure-caption-label">Approximate solution</div>
+                            <p class="code-figure-caption">
+                                Mixed finite element approximation of the Darcy flux and pressure, using the Raviart&ndash;Thomas $RT_0$ finite element space for the flux and the piecewise-constant $P_0$ finite element space for the pressure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section id="teaching">

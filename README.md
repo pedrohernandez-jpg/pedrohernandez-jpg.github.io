@@ -171,6 +171,33 @@ Finite element approximation of the pressure field obtained using continuous pie
 </tr>
 </table>
 
+**`DarcyMixed2d.edp`** — Purpose of the code: Numerical verification of the mixed finite element approximation for a two-dimensional Darcy problem. The code simultaneously computes the Darcy flux and pressure using the Raviart–Thomas $RT_0$ finite element space for the flux and the piecewise-constant $P_0$ space for the pressure. The numerical solution is compared with the exact solution, and the errors and convergence rates are evaluated in the $H(\mathrm{div})$ norm for the flux and the $L^2$ norm for the pressure.
+
+<table>
+<tr>
+<td width="50%">
+<video src="Darcy-mixto_exact_u.mp4" width="100%" autoplay loop muted playsinline controls></video>
+
+**Exact solution**
+
+Analytical flux field
+
+$$\mathbf{u}(x,y)=\left[\frac{\pi}{D}\sin(\pi x)\sin(\pi y),\ -\frac{\pi}{D}\cos(\pi x)\cos(\pi y)\right],$$
+
+with pressure field $p(x,y)=\cos(\pi x)\sin(\pi y)$, used as reference solutions for the mixed Darcy problem.
+
+</td>
+<td width="50%">
+<video src="Darcy-mixto_aprox_uh.mp4" width="100%" autoplay loop muted playsinline controls></video>
+
+**Approximate solution**
+
+Mixed finite element approximation of the Darcy flux and pressure, using the Raviart–Thomas $RT_0$ finite element space for the flux and the piecewise-constant $P_0$ finite element space for the pressure.
+
+</td>
+</tr>
+</table>
+
 ---
 
 ## 🎓 Teaching and Supervision
