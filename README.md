@@ -4,8 +4,6 @@ Welcome to my GitHub profile! I am a pure and applied mathematician whose resear
 
 Alongside my theoretical research, I have experience in **Computational Mechanics** and **Numerical Methods for PDEs**, particularly the **Finite Element Method (FEM)**. I have worked with scientific computing tools including **Python**, **FreeFEM++**, **Matlab**, **Julia**, **R** and the finite element software **NGSolve**, applying numerical techniques to the simulation and analysis of complex physical systems. My current interests also include **computational modeling of nonlinear materials** and **soft matter systems**, where analytical and numerical approaches are combined to investigate **stability phenomena** and multiscale behavior.
 
-I am currently a **Guest Postdoctoral Researcher** working with Prof. Sebastian Throm in the Mathematical Modelling and Analysis Group within the Department of Mathematics and Mathematical Statistics at **Umeå University**, Sweden.
-
 <p style="font-size:1.15rem; line-height:1.5;">
 <b>Guest Postdoctoral Researcher</b> at <a href="https://www.umu.se/institutionen-for-matematik-och-matematisk-statistik">Department of Mathematics and Mathematical Statistics</a><br>
 MIT-huset, plan 3, Matematik och matematisk statistik, Office MIT.D.326<br>
