@@ -28,10 +28,10 @@ Umeå universitet, 901 87 Umeå, Sweden
 ## 🎓 Education
 
 * **Ph.D. in Mathematics** | *Universidad de Concepción, Chile* (2015 – 2020)
-  * **Thesis:** *Variational limits of problems in junction domains for Ferroelectric and Hyperelastic materials by reduction of dimension*
+  * **Thesis:** [*Variational limits of problems in junction domains for Ferroelectric and Hyperelastic materials by reduction of dimension*](https://repositorio.udec.cl/handle/11594/4668)
   * **Supervisors:** Prof. Rajesh Mahadevan, Prof. Ravi Prakash, Prof. Antonio Gaudiello, and Prof. Luciano Carbone.
   * **Funding:** National Agency for Research and Development of Chile (ANID), Doctoral Fellowship.
-  * **Honors:** Grade 4.7/5.0 (1st in thesis, 2nd overall).
+  * **PhD Thesis Grade:** 6.7/7.0 (Outstanding).
 
 * **M.Sc. in Mathematical Sciences** | *Universidad del Atlántico, Colombia* (2011 – 2014)
   * **Thesis:** *On new families of generalized Apostol-type polynomials and their properties*
@@ -89,6 +89,37 @@ Umeå universitet, 901 87 Umeå, Sweden
   I worked with project partner Prof. Sebastian Throm. This visit started the writing of our paper "Derivation of the amplitude equation for the space-fractional Swift-Hohenberg equation via evolutionary Γ-convergence".
 * **05/11/2018 – 31/01/2019** | *Dipartimento di Matematica e Applicazioni Renato Caccioppoli, Università degli Studi di Napoli Federico II, Naples, Italy.*
   I worked with Prof. Antonio Gaudiello and Prof. Luciano Carbone. This visit led to the articles "T-junction of ferroelectric wires" and "Junction of ferroelectric thin cylinders" listed below.
+
+---
+
+## 🎤 Conference Talks and Presentations
+
+### Invited Talks
+
+* **09/03/2026** | Coloquio de Matemáticas y Estadística, Uninorte. Barranquilla, Colombia.
+* **19/01/2026 – 23/01/2026** | 2nd Latin American Congress on Industrial and Applied Mathematics (LACIAM 2026), Valparaíso, Chile.
+* **25/11/2025 – 28/11/2025** | XCIII Encuentro Anual de la Sociedad de Matemática de Chile, Vicuña, Chile.
+* **17/09/2025** | Seminar presentation. Umeå University, Umeå, Sweden.
+* **21/07/2025 – 25/07/2025** | Mathematical Congress of the Americas 2025, Miami, United States.
+* **30/10/2024** | Seminar presentation. Umeå University, Umeå, Sweden.
+* **02/07/2024 – 05/07/2024** | 8th Croatian Mathematical Congress, Osijek, Croatia.
+* **24/04/2024 – 26/04/2024** | XXXVI Jornada de Matemática de la Zona Sur, Temuco, Chile.
+* **18/12/2023 – 21/12/2023** | XCI Encuentro Anual de la Sociedad de Matemática de Chile, Santiago, Chile.
+* **07/09/2023 – 09/09/2023** | Sixth Workshop on Thin Structures, Naples, Italy.
+* **19/04/2023 – 21/04/2023** | XXXV Jornada de Matemática de la Zona Sur, Concepción, Chile.
+* **19/06/2022 – 25/06/2022** | Conference on Analysis, PDEs and Applications, Dubrovnik, Croatia.
+* **15/06/2022 – 18/06/2022** | 7th Croatian Mathematical Congress, Split, Croatia.
+* **18/10/2021** | Seminar presentation. University of Zagreb, Zagreb, Croatia.
+* **26/01/2021** | Seminar presentation. Universidad de Concepción, Concepción, Chile.
+* **10/11/2017, 13/01/2017** | Seminar presentation. Universidad de Concepción, Concepción, Chile.
+* **28/07/2014 – 31/07/2014** | XXVII Venezuelan Mathematics Conference, Barquisimeto, Venezuela.
+* **30/10/2012 – 02/11/2012** | VIII Encuentro Internacional de Matemáticas (EIMAT), Barranquilla, Colombia.
+
+### Poster Presentations
+
+* **04/04/2019 – 26/04/2019** | XXXII Jornada de Matemática de la Zona Sur, Punta Arenas, Chile.
+* **11/07/2016 – 15/07/2016** | V Congreso Latinoamericano de Matemáticos, Barranquilla, Colombia.
+* **20/08/2013 – 23/08/2013** | IX Encuentro Internacional de Matemáticas (EIMAT), Barranquilla, Colombia.
 
 ---
 
@@ -230,6 +261,12 @@ I have lectured and led seminars at several international institutions:
 * **Universidad de O'Higgins (Chile):** Introduction to Discrete Mathematics (ING1111), Linear Algebra (ING1102). Organizer of the *Calculus of Variations & PDE Seminar*.
 * **Universidad de Concepción (Chile):** Real Analysis I, Calculus I and II, Introduction to University Mathematics.
 * **Universidad del Atlántico (Colombia):** Differential Calculus, Foundations of Mathematics, Short courses on Orthogonal Polynomials.
+* **Corporación para el Desarrollo Profesional de la Costa (CODENALCO), Colombia (Lecturing):** 2012 (Semesters 1 and 2): Calculus I, Probabilistic Statistics, Introduction to Software Development.
+* **High School (Grades 6–11) and Primary School (Grades 1–5) Mathematics Teaching, Colombia:**
+  * 2013 – 2014: Institución Educativa María Auxiliadora de Galapa, Barranquilla.
+  * 2012: Colegio San José Hermanitas de la Anunciación, Barranquilla.
+  * 2011: Nuevo Colegio del Prado, Barranquilla.
+  * 2010: Colegio María Montessori de Soledad 2000, Soledad.
 * **Supervision:** Active co-supervision of Ph.D. students (UOH), Master's, and undergraduate students (U. del Atlántico).
 
 ---
