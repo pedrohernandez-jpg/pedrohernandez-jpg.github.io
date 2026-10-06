@@ -14,6 +14,33 @@
             padding: 0;
             background-color: #fcfcfc;
         }
+
+        /* ---------- Language switching ---------- */
+        body[data-lang="en"] .es { display: none !important; }
+        body[data-lang="es"] .en { display: none !important; }
+
+        .lang-switch {
+            display: inline-flex;
+            margin-left: 20px;
+            border: 1px solid #cfd6de;
+            border-radius: 6px;
+            overflow: hidden;
+            vertical-align: middle;
+        }
+        .lang-switch button {
+            border: none;
+            background: #fff;
+            color: #555;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        .lang-switch button + button { border-left: 1px solid #cfd6de; }
+        .lang-switch button:hover { background: #f0f5fb; color: #0066cc; }
+        .lang-switch button.active { background: #0066cc; color: #fff; }
+
         header {
             background-color: #ffffff;
             border-bottom: 1px solid #eaeaea;
@@ -29,6 +56,8 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
+            flex-wrap: wrap;
+            gap: 6px;
         }
         .logo {
             font-weight: bold;
@@ -43,7 +72,8 @@
             font-size: 0.95rem;
         }
         nav a:hover { color: #0066cc; }
-        
+        nav .lang-switch { margin-left: 20px; }
+
         .main-container {
             max-width: 1000px;
             margin: 80px auto 40px auto;
@@ -53,28 +83,29 @@
             gap: 40px;
         }
         @media (max-width: 768px) {
-            .main-container { grid-template-columns: 1fr; }
+            .main-container { grid-template-columns: 1fr; margin-top: 110px; }
             .sidebar { order: -1; text-align: center; }
+            nav a { margin-left: 12px; }
         }
-        
+
         h1 { font-size: 2.2rem; color: #111; margin-bottom: 5px; }
         h2 { font-size: 1.4rem; color: #222; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-top: 35px; }
         h3 { font-size: 1.1rem; color: #444; margin-bottom: 5px; margin-top: 15px; }
         p { margin: 0 0 15px 0; text-align: justify; }
-        
+
         .affiliation { font-style: italic; color: #666; margin-bottom: 20px; font-size: 1.15rem; line-height: 1.5; }
         .affiliation a { color: #0066cc; text-decoration: none; }
         .affiliation a:hover { text-decoration: underline; }
         .affiliation .affiliation-line { display: block; }
-        
+
         ol, ul { padding-left: 20px; margin-bottom: 20px; }
         ol li, ul li { margin-bottom: 10px; text-align: justify; }
-        
+
         .pub-title { font-weight: 600; color: #111; }
         .pub-journal { font-style: italic; color: #444; }
         .pub-links a { font-size: 0.85rem; color: #0066cc; text-decoration: none; margin-right: 10px; }
         .pub-links a:hover { text-decoration: underline; }
-        
+
         details {
             margin-top: 5px;
             background: #f6f8fa;
@@ -90,7 +121,34 @@
             outline: none;
         }
         summary:hover { color: #0066cc; }
-        
+
+        /* ---------- Grants & trips timeline ---------- */
+        .timeline { list-style: none; padding-left: 0; margin-bottom: 20px; }
+        .timeline li {
+            border-left: 3px solid #cfe0f5;
+            padding: 4px 0 4px 16px;
+            margin-bottom: 14px;
+            text-align: left;
+        }
+        .timeline .tl-date {
+            display: block;
+            font-weight: 700;
+            color: #2b6cb0;
+            font-size: 0.9rem;
+        }
+        .timeline .tl-title { font-weight: 600; color: #111; }
+        .timeline .tl-body { color: #444; font-size: 0.95rem; }
+        .tl-tag {
+            display: inline-block;
+            background-color: #fff4d6;
+            color: #8a5a00;
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 5px;
+            margin-left: 6px;
+        }
+
         .sidebar-box {
             background-color: #fff;
             border: 1px solid #e1e4e8;
@@ -110,7 +168,7 @@
         .contact-list li { margin-bottom: 8px; overflow-wrap: break-word; }
         .contact-list a { color: #0066cc; text-decoration: none; }
         .contact-list a:hover { text-decoration: underline; }
-        
+
         .code-card {
             background-color: #fff;
             border: 1px solid #e1e4e8;
@@ -183,19 +241,25 @@
         }
     </style>
 </head>
-<body>
+<body data-lang="en">
 
     <header>
         <div class="nav-container">
             <a href="#" class="logo">P. Hernández-Llanos</a>
             <nav>
-                <a href="#about">About</a>
-                <a href="#publications">Publications</a>
-                <a href="#education">Education</a>
-                <a href="#projects">Trajectory</a>
-                <a href="#tools">Tools</a>
-                <a href="#codes">Codes</a>
-                <a href="#teaching">Teaching</a>
+                <a href="#about"><span class="en">About</span><span class="es">Acerca de</span></a>
+                <a href="#publications"><span class="en">Publications</span><span class="es">Publicaciones</span></a>
+                <a href="#education"><span class="en">Education</span><span class="es">Formación</span></a>
+                <a href="#projects"><span class="en">Trajectory</span><span class="es">Trayectoria</span></a>
+                <a href="#grants"><span class="en">Grants</span><span class="es">Becas</span></a>
+                <a href="#trips"><span class="en">Research Trips</span><span class="es">Visitas</span></a>
+                <a href="#tools"><span class="en">Tools</span><span class="es">Herramientas</span></a>
+                <a href="#codes"><span class="en">Codes</span><span class="es">Códigos</span></a>
+                <a href="#teaching"><span class="en">Teaching</span><span class="es">Docencia</span></a>
+                <span class="lang-switch" role="group" aria-label="Language / Idioma">
+                    <button type="button" id="btn-en" onclick="setLang('en')" title="English">EN</button>
+                    <button type="button" id="btn-es" onclick="setLang('es')" title="Español">ES</button>
+                </span>
             </nav>
         </div>
     </header>
@@ -205,35 +269,55 @@
             <section id="about">
                 <h1>Pedro Hernández-Llanos, Ph.D.</h1>
                 <div class="affiliation">
-                    <span class="affiliation-line">Guest Postdoctoral Researcher at <a href="https://www.umu.se/institutionen-for-matematik-och-matematisk-statistik" target="_blank" rel="noopener">Department of Mathematics and Mathematical Statistics</a></span>
+                    <span class="affiliation-line">
+                        <span class="en">Guest Postdoctoral Researcher at</span><span class="es">Investigador Postdoctoral Invitado en el</span>
+                        <a href="https://www.umu.se/institutionen-for-matematik-och-matematisk-statistik" target="_blank" rel="noopener"><span class="en">Department of Mathematics and Mathematical Statistics</span><span class="es">Departamento de Matemáticas y Estadística Matemática</span></a>
+                    </span>
                     <span class="affiliation-line">MIT-huset, plan 3, Matematik och matematisk statistik, Office MIT.D.326</span>
                     <span class="affiliation-line">Umeå universitet, 901 87 Umeå, Sweden</span>
                 </div>
-                
-                <p>
+
+                <p class="en">
     Welcome to my profile! I am a pure and applied mathematician whose research focuses on the interaction of the <strong>Calculus of Variations</strong>, <strong>Partial Differential Equations (PDEs)</strong>, and <strong>Solid Mechanics</strong>, with applications to <strong>Materials Science</strong> and <strong>Continuum Mechanics</strong>. The use of variational methods is a common theme throughout my work.
 </p>
-<p>
+<p class="es">
+    ¡Bienvenido a mi perfil! Soy un matemático puro y aplicado cuya investigación se centra en la interacción entre el <strong>Cálculo de Variaciones</strong>, las <strong>Ecuaciones en Derivadas Parciales (EDP)</strong> y la <strong>Mecánica de Sólidos</strong>, con aplicaciones a la <strong>Ciencia de Materiales</strong> y la <strong>Mecánica del Continuo</strong>. El uso de métodos variacionales es un tema común a lo largo de mi trabajo.
+</p>
+<p class="en">
     Specifically, I specialize in the <strong>Homogenization</strong> of problems arising in the context of PDEs with <strong>Thin structures</strong> and <strong>Multistructures</strong>. I am interested in developing mathematical theories for the behaviour of new materials via <strong>simultaneous homogenization and dimension reduction</strong> using <strong>multiscale convergence</strong>, <strong>$\Gamma$-convergence</strong>, and the <strong>periodic unfolding method</strong> by combining variational techniques, <strong>operator theory</strong>, and <strong>geometric measure theory</strong>. These techniques find direct applications in Mechanical and Electrical Engineering, as well as Fluid Flow, to name a few.
 </p>
-<p>
+<p class="es">
+    En particular, me especializo en la <strong>Homogeneización</strong> de problemas que surgen en el contexto de EDP con <strong>estructuras delgadas</strong> y <strong>multiestructuras</strong>. Me interesa desarrollar teorías matemáticas para el comportamiento de nuevos materiales mediante <strong>homogeneización y reducción de dimensión simultáneas</strong>, usando <strong>convergencia multiescala</strong>, <strong>$\Gamma$-convergencia</strong> y el <strong>método de desdoblamiento periódico</strong>, combinando técnicas variacionales, <strong>teoría de operadores</strong> y <strong>teoría geométrica de la medida</strong>. Estas técnicas tienen aplicaciones directas en Ingeniería Mecánica y Eléctrica, así como en Flujo de Fluidos, entre otras.
+</p>
+<p class="en">
     Alongside my theoretical research, I have experience in <strong>Computational Mechanics</strong> and <strong>Numerical Methods for PDEs</strong>, particularly the <strong>Finite Element Method (FEM)</strong>. I have worked with scientific computing tools including <strong>Python</strong>, <strong>Matlab</strong>, <strong>Julia</strong>, and the finite element software <strong>NGSolve</strong>, applying numerical techniques to the simulation and analysis of complex physical systems. My current interests also include <strong>computational modeling of nonlinear materials</strong> and <strong>soft matter systems</strong>, where analytical and numerical approaches are combined to investigate <strong>stability phenomena</strong> and multiscale behavior.
 </p>
-                
-                <h2>🔬 Research Interests</h2>
-                <ul>
+<p class="es">
+    Junto con mi investigación teórica, tengo experiencia en <strong>Mecánica Computacional</strong> y <strong>Métodos Numéricos para EDP</strong>, en particular el <strong>Método de Elementos Finitos (MEF)</strong>. He trabajado con herramientas de cómputo científico como <strong>Python</strong>, <strong>Matlab</strong>, <strong>Julia</strong> y el software de elementos finitos <strong>NGSolve</strong>, aplicando técnicas numéricas a la simulación y el análisis de sistemas físicos complejos. Mis intereses actuales incluyen también el <strong>modelado computacional de materiales no lineales</strong> y de <strong>sistemas de materia blanda</strong>, donde se combinan enfoques analíticos y numéricos para investigar <strong>fenómenos de estabilidad</strong> y comportamiento multiescala.
+</p>
+
+                <h2><span class="en">🔬 Research Interests</span><span class="es">🔬 Intereses de investigación</span></h2>
+                <ul class="en">
                     <li>Solid Mechanics.</li>
-                     <li>Material Sciences.</li>
-                     <li><strong>Partial Differential Equations (PDEs)</strong> in Mechanics, Electrical Engineering, and Fluid Mechanics.</li>
+                    <li>Material Sciences.</li>
+                    <li><strong>Partial Differential Equations (PDEs)</strong> in Mechanics, Electrical Engineering, and Fluid Mechanics.</li>
                     <li><strong>Calculus of Variations</strong>, with applications to multistructures and junctions.</li>
                     <li><strong>Nonlinear hyperelastic, poroelastic, magnetoelastic, and ferroelectric materials</strong>.</li>
                     <li><strong>Hydrogels and soft materials</strong>.</li>
                 </ul>
+                <ul class="es">
+                    <li>Mecánica de Sólidos.</li>
+                    <li>Ciencia de Materiales.</li>
+                    <li><strong>Ecuaciones en Derivadas Parciales (EDP)</strong> en Mecánica, Ingeniería Eléctrica y Mecánica de Fluidos.</li>
+                    <li><strong>Cálculo de Variaciones</strong>, con aplicaciones a multiestructuras y uniones.</li>
+                    <li><strong>Materiales no lineales hiperelásticos, poroelásticos, magnetoelásticos y ferroeléctricos</strong>.</li>
+                    <li><strong>Hidrogeles y materiales blandos</strong>.</li>
+                </ul>
             </section>
 
             <section id="publications">
-                <h2>📝 Selected Publications</h2>
-                <h3>Peer-Reviewed Journals</h3>
+                <h2><span class="en">📝 Selected Publications</span><span class="es">📝 Publicaciones seleccionadas</span></h2>
+                <h3><span class="en">Peer-Reviewed Journals</span><span class="es">Revistas con revisión por pares</span></h3>
                 <ol>
                     <li>
                         M. Bužančić, P. Hernández-Llanos, I. Velčić, and J. Žubrinić, <span class="pub-title">“Poroelastic plate model obtained by simultaneous homogenization and dimension reduction,”</span> <span class="pub-journal">Journal of Evolution Equations</span>, vol. 26:12, pp. 1–88, 2026.
@@ -241,8 +325,9 @@
                             <a href="https://doi.org/10.1007/s00028-025-01152-z" target="_blank">DOI: 10.1007/s00028-025-01152-z</a>
                         </div>
                         <details>
-                            <summary>Main contributions</summary>
-                            <p style="margin-top:5px; font-size:0.85rem;">The starting point of our analysis is a coupled system of linear elasticity and Stokes equation. We consider two small parameters: the thickness h of the thin plate and the pore scale ε(h). The obtained model generalizes the poroelastic plate model derived by A. Mikelić et. al. in 2015.</p>
+                            <summary><span class="en">Main contributions</span><span class="es">Contribuciones principales</span></summary>
+                            <p class="en" style="margin-top:5px; font-size:0.85rem;">The starting point of our analysis is a coupled system of linear elasticity and Stokes equation. We consider two small parameters: the thickness h of the thin plate and the pore scale ε(h). The obtained model generalizes the poroelastic plate model derived by A. Mikelić et. al. in 2015.</p>
+                            <p class="es" style="margin-top:5px; font-size:0.85rem;">El punto de partida de nuestro análisis es un sistema acoplado de elasticidad lineal y la ecuación de Stokes. Consideramos dos parámetros pequeños: el espesor h de la placa delgada y la escala de poros ε(h). El modelo obtenido generaliza el modelo de placa poroelástica derivado por A. Mikelić et al. en 2015.</p>
                         </details>
                     </li>
                     <li>
@@ -251,8 +336,9 @@
                             <a href="https://doi.org/10.1016/j.jmaa.2026.130449" target="_blank">DOI: 10.1016/j.jmaa.2026.130449</a>
                         </div>
                         <details>
-                            <summary>Main contributions</summary>
-                            <p style="margin-top:5px; font-size:0.85rem;">Using variational methods, we establish the existence of at least two weak solutions. The first is obtained via direct minimization and the second by the Mountain Pass Theorem.</p>
+                            <summary><span class="en">Main contributions</span><span class="es">Contribuciones principales</span></summary>
+                            <p class="en" style="margin-top:5px; font-size:0.85rem;">Using variational methods, we establish the existence of at least two weak solutions. The first is obtained via direct minimization and the second by the Mountain Pass Theorem.</p>
+                            <p class="es" style="margin-top:5px; font-size:0.85rem;">Mediante métodos variacionales, establecemos la existencia de al menos dos soluciones débiles. La primera se obtiene por minimización directa y la segunda mediante el Teorema del Paso de Montaña.</p>
                         </details>
                     </li>
                     <li>
@@ -261,8 +347,9 @@
                             <a href="https://doi.org/10.1007/s10659-025-10154-4" target="_blank">DOI: 10.1007/s10659-025-10154-4</a>
                         </div>
                         <details>
-                            <summary>Main contributions</summary>
-                            <p style="margin-top:5px; font-size:0.85rem;">We combine homogenization and dimension reduction to derive shell theories from 3D nonlinear elasticity with three small parameters: two material scales and the thickness.</p>
+                            <summary><span class="en">Main contributions</span><span class="es">Contribuciones principales</span></summary>
+                            <p class="en" style="margin-top:5px; font-size:0.85rem;">We combine homogenization and dimension reduction to derive shell theories from 3D nonlinear elasticity with three small parameters: two material scales and the thickness.</p>
+                            <p class="es" style="margin-top:5px; font-size:0.85rem;">Combinamos homogeneización y reducción de dimensión para derivar teorías de láminas a partir de la elasticidad no lineal 3D con tres parámetros pequeños: dos escalas materiales y el espesor.</p>
                         </details>
                     </li>
                     <li>
@@ -271,8 +358,9 @@
                             <a href="https://doi.org/10.3233/ASY-211683" target="_blank">DOI: 10.3233/ASY-211683</a>
                         </div>
                         <details>
-                            <summary>Main contributions</summary>
-                            <p style="margin-top:5px; font-size:0.85rem;">I obtain a 1D asymptotic model for a junction of thin hyperelastic rods using Γ-convergence, showing weak convergence in Sobolev spaces.</p>
+                            <summary><span class="en">Main contributions</span><span class="es">Contribuciones principales</span></summary>
+                            <p class="en" style="margin-top:5px; font-size:0.85rem;">I obtain a 1D asymptotic model for a junction of thin hyperelastic rods using Γ-convergence, showing weak convergence in Sobolev spaces.</p>
+                            <p class="es" style="margin-top:5px; font-size:0.85rem;">Obtengo un modelo asintótico 1D para una unión de varillas hiperelásticas delgadas mediante Γ-convergencia, demostrando convergencia débil en espacios de Sobolev.</p>
                         </details>
                     </li>
                     <li>
@@ -281,8 +369,9 @@
                             <a href="https://doi.org/10.1051/m2an/20200001" target="_blank">DOI: 10.1051/m2an/20200001</a>
                         </div>
                         <details>
-                            <summary>Main contributions</summary>
-                            <p style="margin-top:5px; font-size:0.85rem;">Analysis of junction phenomena for orthogonal joined ferroelectric wires. We show that while the limit problems remain non-convex, the nonlocality disappears.</p>
+                            <summary><span class="en">Main contributions</span><span class="es">Contribuciones principales</span></summary>
+                            <p class="en" style="margin-top:5px; font-size:0.85rem;">Analysis of junction phenomena for orthogonal joined ferroelectric wires. We show that while the limit problems remain non-convex, the nonlocality disappears.</p>
+                            <p class="es" style="margin-top:5px; font-size:0.85rem;">Análisis de fenómenos de unión para cables ferroeléctricos unidos ortogonalmente. Mostramos que, aunque los problemas límite siguen siendo no convexos, la no localidad desaparece.</p>
                         </details>
                     </li>
                     <li>
@@ -291,33 +380,49 @@
                             <a href="https://doi.org/10.1007/s00025-014-0430-2" target="_blank">DOI: 10.1007/s00025-014-0430-2</a>
                         </div>
                         <details>
-                            <summary>Main contributions</summary>
-                            <p style="margin-top:5px; font-size:0.85rem;">New results concerning extensions of generalized Apostol-type polynomials, connecting them with Stirling numbers and Jacobi polynomials.</p>
+                            <summary><span class="en">Main contributions</span><span class="es">Contribuciones principales</span></summary>
+                            <p class="en" style="margin-top:5px; font-size:0.85rem;">New results concerning extensions of generalized Apostol-type polynomials, connecting them with Stirling numbers and Jacobi polynomials.</p>
+                            <p class="es" style="margin-top:5px; font-size:0.85rem;">Nuevos resultados sobre extensiones de los polinomios generalizados de tipo Apostol, conectándolos con los números de Stirling y los polinomios de Jacobi.</p>
                         </details>
                     </li>
                 </ol>
 
-                <h3>Under Review / Preprints</h3>
+                <h3><span class="en">Under Review / Preprints</span><span class="es">En revisión / Preprints</span></h3>
                 <ul>
                     <li>
-                        <strong>Stability surface for confined hydrogel layer on substrates</strong> (with D. Henao, C. Roman, and X. Lamy) – <em>(2026, To be submitted to <em>SIAM J. Appl. Anal.</em>)</em>.
+                        <strong>Stability surface for confined hydrogel layer on substrates</strong> (<span class="en">with</span><span class="es">con</span> D. Henao, C. Roman, <span class="en">and</span><span class="es">y</span> X. Lamy) – <em>(2026, <span class="en">To be submitted to</span><span class="es">Por enviar a</span> <em>SIAM J. Appl. Anal.</em>)</em>.
                         <div class="pub-links"><a href="https://pedrohernandez-jpg.github.io/Paper1version2026.pdf" target="_blank">PDF Paper</a></div>
                     </li>
                     <li>
-                        <strong>Junction of ferroelectric thin cylinders</strong> (with L. Faella and R. Prakash) – Submitted to <em>ESAIM: COCV</em>. 
+                        <strong>Junction of ferroelectric thin cylinders</strong> (<span class="en">with</span><span class="es">con</span> L. Faella <span class="en">and</span><span class="es">y</span> R. Prakash) – <span class="en">Submitted to</span><span class="es">Enviado a</span> <em>ESAIM: COCV</em>.
                         <div class="pub-links"><a href="https://doi.org/10.48550/arXiv.2311.00515" target="_blank">arXiv:2311.00515</a></div>
                     </li>
                     <li>
-                        <strong>Homogenized moderately wrinkled shell theory from 3d koiter's linear elasticity</strong> (with R. Mahadevan and R. Prakash) – Submitted to <em>Mathematical Models and Methods in
-Applied Sciences</em>. 
+                        <strong>Homogenized moderately wrinkled shell theory from 3d koiter's linear elasticity</strong> (<span class="en">with</span><span class="es">con</span> R. Mahadevan <span class="en">and</span><span class="es">y</span> R. Prakash) – <span class="en">Submitted to</span><span class="es">Enviado a</span> <em>Mathematical Models and Methods in Applied Sciences</em>.
                         <div class="pub-links"><a href="https://arxiv.org/abs/2601.11384" target="_blank">arXiv:2601.11384</a></div>
+                    </li>
+                </ul>
+
+                <h3><span class="en">In Preparation</span><span class="es">En preparación</span></h3>
+                <ul>
+                    <li>
+                        P. Hernández-Llanos <span class="en">and</span><span class="es">y</span> S. Throm, <span class="pub-title">“Derivation of the amplitude equation for the space-fractional Swift-Hohenberg equation via evolutionary Γ-convergence,”</span> <span class="en">In preparation</span><span class="es">En preparación</span>, 2026.
+                    </li>
+                    <li>
+                        C. Mora-Corral, L. D’Elia <span class="en">and</span><span class="es">y</span> P. Hernández-Llanos, <span class="pub-title">“About von Kármán theories for a magnetoelastic composite plate obtained by simultaneous homogenization and dimension reduction,”</span> <span class="en">In preparation</span><span class="es">En preparación</span>, 2026.
+                    </li>
+                    <li>
+                        P. Hernández-Llanos, <span class="pub-title">“Poroelastic shell model obtained by simultaneous homogenization and dimension reduction,”</span> <span class="en">In preparation</span><span class="es">En preparación</span>, 2026.
+                    </li>
+                    <li>
+                        P. Hernández-Llanos, <span class="pub-title">“A model for a gel bonded to a curved rigid substrate,”</span> <span class="en">In preparation</span><span class="es">En preparación</span>, 2026.
                     </li>
                 </ul>
             </section>
 
             <section id="education">
-                <h2>🎓 Education</h2>
-                <ul>
+                <h2><span class="en">🎓 Education</span><span class="es">🎓 Formación académica</span></h2>
+                <ul class="en">
                     <li>
                         <strong>Ph.D. in Mathematics</strong> | <em>Universidad de Concepción, Chile</em> (2015 – 2020)
                         <br><span style="font-style: italic; color: #555;">Thesis:</span> “Variational limits of problems in junction domains for Ferroelectric and Hyperelastic materials by reduction of dimension”
@@ -336,11 +441,30 @@ Applied Sciences</em>.
                         <br><span style="font-style: italic; color: #555;">Awards:</span> Undergraduate prize for best student of promotion with M.Sc. Fellowship.
                     </li>
                 </ul>
+                <ul class="es">
+                    <li>
+                        <strong>Doctorado en Matemáticas</strong> | <em>Universidad de Concepción, Chile</em> (2015 – 2020)
+                        <br><span style="font-style: italic; color: #555;">Tesis:</span> “Variational limits of problems in junction domains for Ferroelectric and Hyperelastic materials by reduction of dimension”
+                        <br><span style="font-style: italic; color: #555;">Directores:</span> Prof. Rajesh Mahadevan, Prof. Ravi Prakash, Prof. Antonio Gaudiello y Prof. Luciano Carbone.
+                        <br><span style="font-style: italic; color: #555;">Financiamiento:</span> Agencia Nacional de Investigación y Desarrollo de Chile (ANID), Beca de Doctorado.
+                        <br><span style="font-style: italic; color: #555;">Distinciones:</span> Nota 4,7/5,0 (1.º en la tesis, 2.º en el promedio general).
+                    </li>
+                    <li>
+                        <strong>Maestría en Ciencias Matemáticas</strong> | <em>Universidad del Atlántico, Colombia</em> (2011 – 2014)
+                        <br><span style="font-style: italic; color: #555;">Tesis:</span> “On new families of generalized Apostol-type polynomials and their properties”
+                        <br><span style="font-style: italic; color: #555;">Director:</span> Prof. Alejandro Urieles Guerrero.
+                    </li>
+                    <li>
+                        <strong>Licenciatura en Educación Media (Énfasis en Matemáticas)</strong> | <em>Universidad del Atlántico, Colombia</em> (2005 – 2010)
+                        <br><span style="font-style: italic; color: #555;">Distinciones:</span> Nota 4,34/5,0 (1.º del programa).
+                        <br><span style="font-style: italic; color: #555;">Premios:</span> Premio al mejor estudiante de la promoción con beca para estudios de maestría.
+                    </li>
+                </ul>
             </section>
 
             <section id="projects">
-                <h2>💼 Academic Trajectory and Projects</h2>
-                <ul>
+                <h2><span class="en">💼 Academic Trajectory and Projects</span><span class="es">💼 Trayectoria académica y proyectos</span></h2>
+                <ul class="en">
                     <li>
                         <strong>Guest Postdoctoral Researcher</strong> | <em>Umeå University, Sweden</em> (2026 – Present).
                         <br><span style="color: #555;">Research on the derivation of the amplitude equation for the space-fractional Swift-Hohenberg equation via evolutionary $\Gamma$-convergence alongside Prof. Sebastian Throm.</span>
@@ -354,39 +478,169 @@ Applied Sciences</em>.
                         <br><span style="color: #555;">Project funded by the Croatian Science Foundation (HRZZ) centered on poroelastic plates via simultaneous homogenization and dimension reduction alongside Prof. Igor Velčić.</span>
                     </li>
                 </ul>
+                <ul class="es">
+                    <li>
+                        <strong>Investigador Postdoctoral Invitado</strong> | <em>Umeå University, Suecia</em> (2026 – Presente).
+                        <br><span style="color: #555;">Investigación sobre la derivación de la ecuación de amplitud para la ecuación de Swift-Hohenberg fraccionaria en espacio mediante $\Gamma$-convergencia evolutiva, junto al Prof. Sebastian Throm.</span>
+                    </li>
+                    <li>
+                        <strong>Investigador Postdoctoral</strong> | <em>Universidad de O'Higgins (UOH), Chile</em> (2023 – 2026).
+                        <br><span style="color: #555;">Investigador Principal del proyecto <strong>Fondecyt Postdoctoral ANID N° 3230202</strong>, enfocado en modelos bidimensionales de estructuras delgadas con magnetoelasticidad, poroelasticidad y propiedades de gel rígido, junto al Prof. Duvan Henao.</span>
+                    </li>
+                    <li>
+                        <strong>Investigador Postdoctoral Asociado</strong> | <em>University of Zagreb, Croacia</em> (2021 – 2022).
+                        <br><span style="color: #555;">Proyecto financiado por la Fundación Croata de Ciencia (HRZZ), centrado en placas poroelásticas mediante homogeneización y reducción de dimensión simultáneas, junto al Prof. Igor Velčić.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="grants">
+                <h2><span class="en">🏆 Grants as Principal Investigator (PI) and Awards</span><span class="es">🏆 Proyectos como Investigador Principal (PI) y premios</span></h2>
+                <ul class="timeline">
+                    <li>
+                        <span class="tl-date">2025</span>
+                        <span class="tl-title en">Umeå Universitet — Horizon Europe Marie Skłodowska-Curie Actions <span class="tl-tag">Seal of Excellence</span></span>
+                        <span class="tl-title es">Umeå Universitet — Horizon Europe Marie Skłodowska-Curie Actions <span class="tl-tag">Sello de Excelencia</span></span>
+                        <span class="tl-body en">Call HORIZON-MSCA-2025-PF-01-01, MSCA Postdoctoral Fellowships 2025. Project proposal 101274133-VAMOS. Total score: 86.4% (threshold: 70/100). Seal of Excellence.</span>
+                        <span class="tl-body es">Convocatoria HORIZON-MSCA-2025-PF-01-01, MSCA Postdoctoral Fellowships 2025. Propuesta de proyecto 101274133-VAMOS. Puntaje total: 86,4 % (umbral: 70/100). Sello de Excelencia.</span>
+                    </li>
+                    <li>
+                        <span class="tl-date">15/04/2023 – 14/04/2026</span>
+                        <span class="tl-title en">National Agency for Research and Development of Chile (ANID) — Fondecyt Postdoctoral Fellowship 2023</span>
+                        <span class="tl-title es">Agencia Nacional de Investigación y Desarrollo de Chile (ANID) — Beca Fondecyt Postdoctoral 2023</span>
+                        <span class="tl-body en">Grant No. 3230202. Awarded on the basis of academic merit. Valued at 30,000 USD per annum.</span>
+                        <span class="tl-body es">Proyecto N.º 3230202. Otorgada por mérito académico. Valorada en 30.000 USD anuales.</span>
+                    </li>
+                    <li>
+                        <span class="tl-date">20/06/2025 – 19/07/2025</span>
+                        <span class="tl-title en">Instituto de Ciencias Matemáticas (ICMAT), Universidad Autónoma de Madrid, Spain</span>
+                        <span class="tl-title es">Instituto de Ciencias Matemáticas (ICMAT), Universidad Autónoma de Madrid, España</span>
+                        <span class="tl-body en">Grant “Puentes Matemáticos con Latinoamérica” 2025. Awarded on the basis of academic merit. Valued at 1,100 USD per month.</span>
+                        <span class="tl-body es">Beca “Puentes Matemáticos con Latinoamérica” 2025. Otorgada por mérito académico. Valorada en 1.100 USD mensuales.</span>
+                    </li>
+                    <li>
+                        <span class="tl-date">02/10/2021 – 30/09/2022</span>
+                        <span class="tl-title en">Croatian Science Foundation (HRZZ)</span>
+                        <span class="tl-title es">Fundación Croata de Ciencia (HRZZ)</span>
+                        <span class="tl-body en">“Homogenization and dimension reduction and Structural Optimization in continuum mechanics”. Awarded as Associate Postdoctoral Fellow at the Faculty of Electrical Engineering and Computing (FER), University of Zagreb, on the basis of academic merit. Valued at 1,800 USD per month.</span>
+                        <span class="tl-body es">“Homogenization and dimension reduction and Structural Optimization in continuum mechanics”. Otorgada como Investigador Postdoctoral Asociado en la Facultad de Ingeniería Eléctrica y Computación (FER), Universidad de Zagreb, por mérito académico. Valorada en 1.800 USD mensuales.</span>
+                    </li>
+                    <li>
+                        <span class="tl-date">2015 – 2020</span>
+                        <span class="tl-title en">National Agency for Research and Development of Chile (ANID) — Fondecyt National Doctoral Fellowship 2015</span>
+                        <span class="tl-title es">Agencia Nacional de Investigación y Desarrollo de Chile (ANID) — Beca Nacional de Doctorado Fondecyt 2015</span>
+                        <span class="tl-body en">Grant No. 21150001. Awarded on the basis of academic merit. Valued at 12,065 USD per annum.</span>
+                        <span class="tl-body es">Proyecto N.º 21150001. Otorgada por mérito académico. Valorada en 12.065 USD anuales.</span>
+                    </li>
+                    <li>
+                        <span class="tl-date">2015</span>
+                        <span class="tl-title en">Universidad del Atlántico, Colombia — Impacto Caribe Project</span>
+                        <span class="tl-title es">Universidad del Atlántico, Colombia — Proyecto Impacto Caribe</span>
+                        <span class="tl-body en">“About generalized Apostol-type polynomials”, number IC-002627-2015. Awarded on the basis of academic merit. Valued at 60,000,000 COP per annum.</span>
+                        <span class="tl-body es">“About generalized Apostol-type polynomials”, número IC-002627-2015. Otorgado por mérito académico. Valorado en 60.000.000 COP anuales.</span>
+                    </li>
+                    <li>
+                        <span class="tl-date">2014</span>
+                        <span class="tl-title en">Universidad del Atlántico, Colombia — Young Researchers Project 2014 (Colciencias)</span>
+                        <span class="tl-title es">Universidad del Atlántico, Colombia — Proyecto Jóvenes Investigadores 2014 (Colciencias)</span>
+                        <span class="tl-body en">“Existence of Oscillations in Chua’s Circuit.” Administrative Department of Science of Colombia (Colciencias). Awarded on the basis of academic merit. Valued at 21,600,000 COP per annum.</span>
+                        <span class="tl-body es">“Existence of Oscillations in Chua’s Circuit.” Departamento Administrativo de Ciencia de Colombia (Colciencias). Otorgado por mérito académico. Valorado en 21.600.000 COP anuales.</span>
+                    </li>
+                    <li>
+                        <span class="tl-date">2011 – 2014</span>
+                        <span class="tl-title en">Universidad del Atlántico, Colombia — Best bachelor student prize</span>
+                        <span class="tl-title es">Universidad del Atlántico, Colombia — Premio al mejor estudiante de pregrado</span>
+                        <span class="tl-body en">Full fellowship to pursue a Master’s degree. Awarded on the basis of academic merit. Free tuition throughout the entire course.</span>
+                        <span class="tl-body es">Beca completa para cursar estudios de maestría. Otorgado por mérito académico. Matrícula gratuita durante todo el programa.</span>
+                    </li>
+                    <li>
+                        <span class="tl-date">2005 – 2010</span>
+                        <span class="tl-title en">Universidad del Atlántico, Colombia — Best bachelor student grades by semester prize</span>
+                        <span class="tl-title es">Universidad del Atlántico, Colombia — Premio a las mejores notas de pregrado por semestre</span>
+                        <span class="tl-body en">Awarded on the basis of academic merit. Free tuition throughout the entire course.</span>
+                        <span class="tl-body es">Otorgado por mérito académico. Matrícula gratuita durante todo el programa.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="trips">
+                <h2><span class="en">✈️ Research Trips</span><span class="es">✈️ Visitas de investigación</span></h2>
+                <ul class="timeline">
+                    <li>
+                        <span class="tl-date">26/07/2025 – 23/09/2025</span>
+                        <span class="tl-title en">Umeå University, Department of Mathematics and Mathematical Statistics, Sweden</span>
+                        <span class="tl-title es">Umeå University, Departamento de Matemáticas y Estadística Matemática, Suecia</span>
+                        <span class="tl-body en">I worked with project partner Prof. Sebastian Throm. The aim of this visit was to finish our paper “Derivation of the amplitude equation for the space-fractional Swift-Hohenberg equation via evolutionary Γ-convergence”.</span>
+                        <span class="tl-body es">Trabajé con el socio del proyecto, Prof. Sebastian Throm. El objetivo de esta visita fue terminar nuestro artículo “Derivation of the amplitude equation for the space-fractional Swift-Hohenberg equation via evolutionary Γ-convergence”.</span>
+                    </li>
+                    <li>
+                        <span class="tl-date">20/06/2025 – 19/07/2025</span>
+                        <span class="tl-title en">Universidad Autónoma de Madrid, Spain — Instituto de Ciencias Matemáticas (ICMAT)</span>
+                        <span class="tl-title es">Universidad Autónoma de Madrid, España — Instituto de Ciencias Matemáticas (ICMAT)</span>
+                        <span class="tl-body en">I worked with project partner Prof. Carlos Mora-Corral. The aim of this visit was to finish my research on the von Kármán model for nonlinear magnetoelastic plates via simultaneous homogenization and dimension reduction.</span>
+                        <span class="tl-body es">Trabajé con el socio del proyecto, Prof. Carlos Mora-Corral. El objetivo de esta visita fue terminar mi investigación sobre el modelo de von Kármán para placas magnetoelásticas no lineales mediante homogeneización y reducción de dimensión simultáneas.</span>
+                    </li>
+                    <li>
+                        <span class="tl-date">18/09/2024 – 07/02/2025</span>
+                        <span class="tl-title en">Umeå University, Department of Mathematics and Mathematical Statistics, Sweden</span>
+                        <span class="tl-title es">Umeå University, Departamento de Matemáticas y Estadística Matemática, Suecia</span>
+                        <span class="tl-body en">I worked with project partner Prof. Sebastian Throm. This visit started the writing of our paper “Derivation of the amplitude equation for the space-fractional Swift-Hohenberg equation via evolutionary Γ-convergence”.</span>
+                        <span class="tl-body es">Trabajé con el socio del proyecto, Prof. Sebastian Throm. Esta visita dio inicio a la redacción de nuestro artículo “Derivation of the amplitude equation for the space-fractional Swift-Hohenberg equation via evolutionary Γ-convergence”.</span>
+                    </li>
+                    <li>
+                        <span class="tl-date">05/11/2018 – 31/01/2019</span>
+                        <span class="tl-title en">Dipartimento di Matematica e Applicazioni Renato Caccioppoli, Università degli Studi di Napoli Federico II, Naples, Italy</span>
+                        <span class="tl-title es">Dipartimento di Matematica e Applicazioni Renato Caccioppoli, Università degli Studi di Napoli Federico II, Nápoles, Italia</span>
+                        <span class="tl-body en">I worked with Prof. Antonio Gaudiello and Prof. Luciano Carbone. This visit led to the articles “T-junction of ferroelectric wires” and “Junction of ferroelectric thin cylinders” listed above.</span>
+                        <span class="tl-body es">Trabajé con el Prof. Antonio Gaudiello y el Prof. Luciano Carbone. Esta visita dio lugar a los artículos “T-junction of ferroelectric wires” y “Junction of ferroelectric thin cylinders” listados arriba.</span>
+                    </li>
+                </ul>
             </section>
 
             <section id="tools">
-                <h2>🛠️ Scientific Computing and Tools</h2>
-                <p>I have experience developing scientific code applied to solving and simulating PDEs, variational methods, and dimensional reduction problems:</p>
-                <ul>
+                <h2><span class="en">🛠️ Scientific Computing and Tools</span><span class="es">🛠️ Cómputo científico y herramientas</span></h2>
+                <p class="en">I have experience developing scientific code applied to solving and simulating PDEs, variational methods, and dimensional reduction problems:</p>
+                <p class="es">Tengo experiencia desarrollando código científico aplicado a la resolución y simulación de EDP, métodos variacionales y problemas de reducción de dimensión:</p>
+                <ul class="en">
                     <li><strong>Languages and Software:</strong> Advanced in Python, FreeFem++, FEniCS, Matlab, Julia, R, Mathematica, and Wolfram Language.</li>
                     <li><strong>Scientific Typography:</strong> Professional editing and typesetting in LaTeX and TeX.</li>
+                </ul>
+                <ul class="es">
+                    <li><strong>Lenguajes y software:</strong> Nivel avanzado en Python, FreeFem++, FEniCS, Matlab, Julia, R, Mathematica y Wolfram Language.</li>
+                    <li><strong>Tipografía científica:</strong> Edición y composición profesional en LaTeX y TeX.</li>
                 </ul>
             </section>
 
             <section id="codes">
-                <h2>💻 Codes</h2>
-                <p>Selected numerical simulations developed to solve and validate the variational and PDE models arising in my research, implemented in Python, FreeFem++, FEniCS, Matlab, Julia, R, Mathematica, and Wolfram.</p>
+                <h2><span class="en">💻 Codes</span><span class="es">💻 Códigos</span></h2>
+                <p class="en">Selected numerical simulations developed to solve and validate the variational and PDE models arising in my research, implemented in Python, FreeFem++, FEniCS, Matlab, Julia, R, Mathematica, and Wolfram.</p>
+                <p class="es">Simulaciones numéricas seleccionadas, desarrolladas para resolver y validar los modelos variacionales y de EDP que surgen en mi investigación, implementadas en Python, FreeFem++, FEniCS, Matlab, Julia, R, Mathematica y Wolfram.</p>
 
                 <div class="code-card">
                     <span class="code-badge">Python</span>
                     <h3 class="code-title">GelStableConfiguration.py</h3>
-                    <p class="code-desc">Finite-element computation of stable equilibrium configurations of a confined hydrogel layer bonded to a rigid substrate, solved via an incremental softening (continuation) scheme with Newton's method under a penalty-based non-penetration constraint.</p>
+                    <p class="code-desc en">Finite-element computation of stable equilibrium configurations of a confined hydrogel layer bonded to a rigid substrate, solved via an incremental softening (continuation) scheme with Newton's method under a penalty-based non-penetration constraint.</p>
+                    <p class="code-desc es">Cálculo por elementos finitos de configuraciones de equilibrio estables de una capa de hidrogel confinada y adherida a un sustrato rígido, resuelto mediante un esquema incremental de ablandamiento (continuación) con el método de Newton bajo una restricción de no penetración por penalización.</p>
 
                     <div class="code-figure-grid">
                         <div class="code-figure">
                             <img src="geldeformation.png" alt="Stable gel configuration for mu bar = -0.0005">
-                            <div class="code-figure-caption-label">Stable Configuration — $\overline{\mu}=-0.0005$</div>
-                            <p class="code-figure-caption">
+                            <div class="code-figure-caption-label"><span class="en">Stable Configuration</span><span class="es">Configuración estable</span> — $\overline{\mu}=-0.0005$</div>
+                            <p class="code-figure-caption en">
                                 Successful computation of the stable configuration for the gel for $L=90.00$ mm, $d=1.62$ mm, $\phi_0=0.20$ and $\overline{\mu}=-0.0005$ under zero-displacement Dirichlet boundary conditions ($\mathbf{u}=\mathbf{0}$) along the bonded and debonded interfaces, supplemented by a penalty-based non-penetration condition ($y+u_y \ge 0$) at the bottom surface. The nonlinear problem is solved via an incremental softening scheme across 16 load steps. Newton's method is executed with a convergence tolerance of tol $=10^{-3}$ (and tol $=10^{-6}$ for the final step), allowing a maximum of 100 Newton iterations per step and up to 500 iterations for the final stage. The color bar is adjusted to show in red the magnitude of the maximum displacement, which is $1.13$ mm. This corresponds to the solution obtained when using the swelling equilibrium of the gel with a shear modulus of $0.1372$ MPa as the initial approximation for a gel with shear modulus of $0.13721349978333722$ MPa.
+                            </p>
+                            <p class="code-figure-caption es">
+                                Cálculo exitoso de la configuración estable del gel para $L=90.00$ mm, $d=1.62$ mm, $\phi_0=0.20$ y $\overline{\mu}=-0.0005$, con condiciones de frontera de Dirichlet de desplazamiento nulo ($\mathbf{u}=\mathbf{0}$) en las interfaces adherida y desprendida, complementadas con una condición de no penetración por penalización ($y+u_y \ge 0$) en la superficie inferior. El problema no lineal se resuelve mediante un esquema de ablandamiento incremental en 16 pasos de carga. El método de Newton se ejecuta con una tolerancia de convergencia tol $=10^{-3}$ (y tol $=10^{-6}$ en el paso final), permitiendo un máximo de 100 iteraciones de Newton por paso y hasta 500 iteraciones en la etapa final. La barra de colores se ajusta para mostrar en rojo la magnitud del desplazamiento máximo, que es de $1.13$ mm. Esto corresponde a la solución obtenida al usar el equilibrio de hinchamiento del gel con módulo de corte de $0.1372$ MPa como aproximación inicial para un gel con módulo de corte de $0.13721349978333722$ MPa.
                             </p>
                         </div>
                         <div class="code-figure">
                             <img src="geldeformation2.png" alt="Stable gel configuration for mu bar = -0.003">
-                            <div class="code-figure-caption-label">Stable Configuration — $\overline{\mu}=-0.003$</div>
-                            <p class="code-figure-caption">
+                            <div class="code-figure-caption-label"><span class="en">Stable Configuration</span><span class="es">Configuración estable</span> — $\overline{\mu}=-0.003$</div>
+                            <p class="code-figure-caption en">
                                 Successful computation of the stable configuration for the gel for $L=90.00$ mm, $d=1.62$ mm, $\phi_0=0.20$ and $\overline{\mu}=-0.003$ under zero-displacement Dirichlet boundary conditions ($\mathbf{u}=\mathbf{0}$) along the bonded and debonded interfaces, supplemented by a penalty-based non-penetration condition ($y+u_y \ge 0$) at the bottom surface. The nonlinear problem is solved via an incremental softening scheme across 16 load steps. Newton's method is executed with a convergence tolerance of tol $=10^{-3}$ (and tol $=10^{-6}$ for the final step), allowing a maximum of 100 Newton iterations per step and up to 500 iterations for the final stage. The color bar is adjusted to show in red the magnitude of the maximum displacement, which is $1.32$ mm. This corresponds to the solution obtained when using the swelling equilibrium of the gel with a shear modulus of $0.1372$ MPa as the initial approximation for a gel with shear modulus of $0.13721349978333722$ MPa.
+                            </p>
+                            <p class="code-figure-caption es">
+                                Cálculo exitoso de la configuración estable del gel para $L=90.00$ mm, $d=1.62$ mm, $\phi_0=0.20$ y $\overline{\mu}=-0.003$, con condiciones de frontera de Dirichlet de desplazamiento nulo ($\mathbf{u}=\mathbf{0}$) en las interfaces adherida y desprendida, complementadas con una condición de no penetración por penalización ($y+u_y \ge 0$) en la superficie inferior. El problema no lineal se resuelve mediante un esquema de ablandamiento incremental en 16 pasos de carga. El método de Newton se ejecuta con una tolerancia de convergencia tol $=10^{-3}$ (y tol $=10^{-6}$ en el paso final), permitiendo un máximo de 100 iteraciones de Newton por paso y hasta 500 iteraciones en la etapa final. La barra de colores se ajusta para mostrar en rojo la magnitud del desplazamiento máximo, que es de $1.32$ mm. Esto corresponde a la solución obtenida al usar el equilibrio de hinchamiento del gel con módulo de corte de $0.1372$ MPa como aproximación inicial para un gel con módulo de corte de $0.13721349978333722$ MPa.
                             </p>
                         </div>
                     </div>
@@ -395,21 +649,28 @@ Applied Sciences</em>.
                 <div class="code-card">
                     <span class="code-badge">Python</span>
                     <h3 class="code-title">gels-testCluster-NoChemicalPotential.py</h3>
-                    <p class="code-desc">Finite-element computation of the energy density of a confined hydrogel layer bonded to a rigid substrate, solved via an incremental softening (continuation) scheme with Newton's method under a penalty-based non-penetration constraint.</p>
+                    <p class="code-desc en">Finite-element computation of the energy density of a confined hydrogel layer bonded to a rigid substrate, solved via an incremental softening (continuation) scheme with Newton's method under a penalty-based non-penetration constraint.</p>
+                    <p class="code-desc es">Cálculo por elementos finitos de la densidad de energía de una capa de hidrogel confinada y adherida a un sustrato rígido, resuelto mediante un esquema incremental de ablandamiento (continuación) con el método de Newton bajo una restricción de no penetración por penalización.</p>
 
                     <div class="code-figure-grid">
                         <div class="code-figure">
                             <img src="geldebonding.png" alt="Stable gel configuration for mu bar = 0">
-                            <div class="code-figure-caption-label">Stable Configuration — $\overline{\mu}=0$</div>
-                            <p class="code-figure-caption">
+                            <div class="code-figure-caption-label"><span class="en">Stable Configuration</span><span class="es">Configuración estable</span> — $\overline{\mu}=0$</div>
+                            <p class="code-figure-caption en">
                                 Successful computation of the energy density for a gel for $L=90.00$ mm, $d=1.62$ mm, $w=15.00$ mm, $\phi_0=0.20$ and $\overline{\mu}=0$ under zero-displacement Dirichlet boundary conditions ($\mathbf{u}=\mathbf{0}$) along the bonded and debonded interfaces, supplemented by a penalty-based non-penetration condition ($y+u_y \ge 0$) at the bottom surface. The nonlinear problem is solved via an incremental softening scheme across 16 load steps. Newton's method is executed with a convergence tolerance of tol $=10^{-3}$ (and tol $=10^{-6}$ for the final step), allowing a maximum of 100 Newton iterations per step and up to 500 iterations for the final stage. The color bar is adjusted to show in red the magnitude of the maximum density energy, which is $152$ mJ.
+                            </p>
+                            <p class="code-figure-caption es">
+                                Cálculo exitoso de la densidad de energía de un gel para $L=90.00$ mm, $d=1.62$ mm, $w=15.00$ mm, $\phi_0=0.20$ y $\overline{\mu}=0$, con condiciones de frontera de Dirichlet de desplazamiento nulo ($\mathbf{u}=\mathbf{0}$) en las interfaces adherida y desprendida, complementadas con una condición de no penetración por penalización ($y+u_y \ge 0$) en la superficie inferior. El problema no lineal se resuelve mediante un esquema de ablandamiento incremental en 16 pasos de carga. El método de Newton se ejecuta con una tolerancia de convergencia tol $=10^{-3}$ (y tol $=10^{-6}$ en el paso final), permitiendo un máximo de 100 iteraciones de Newton por paso y hasta 500 iteraciones en la etapa final. La barra de colores se ajusta para mostrar en rojo la magnitud de la densidad de energía máxima, que es de $152$ mJ.
                             </p>
                         </div>
                         <div class="code-figure">
                             <img src="geldebonding2.png" alt="Stable gel configuration for mu bar = 0">
-                            <div class="code-figure-caption-label">Stable Configuration — $\overline{\mu}=0$</div>
-                            <p class="code-figure-caption">
+                            <div class="code-figure-caption-label"><span class="en">Stable Configuration</span><span class="es">Configuración estable</span> — $\overline{\mu}=0$</div>
+                            <p class="code-figure-caption en">
                                 Successful computation of the energy density for a gel for $L=90.00$ mm, $d=1.62$ mm, $w=15.00$ mm, $\phi_0=0.20$ and $\overline{\mu}=0$ under zero-displacement Dirichlet boundary conditions ($\mathbf{u}=\mathbf{0}$) along the bonded and debonded interfaces, supplemented by a penalty-based non-penetration condition ($y+u_y \ge 0$) at the bottom surface. The nonlinear problem is solved via an incremental softening scheme across 16 load steps. Newton's method is executed with a convergence tolerance of tol $=10^{-3}$ (and tol $=10^{-6}$ for the final step), allowing a maximum of 100 Newton iterations per step and up to 500 iterations for the final stage. The color bar is adjusted to show in red the magnitude of the maximum density energy, which is $152$ mJ.
+                            </p>
+                            <p class="code-figure-caption es">
+                                Cálculo exitoso de la densidad de energía de un gel para $L=90.00$ mm, $d=1.62$ mm, $w=15.00$ mm, $\phi_0=0.20$ y $\overline{\mu}=0$, con condiciones de frontera de Dirichlet de desplazamiento nulo ($\mathbf{u}=\mathbf{0}$) en las interfaces adherida y desprendida, complementadas con una condición de no penetración por penalización ($y+u_y \ge 0$) en la superficie inferior. El problema no lineal se resuelve mediante un esquema de ablandamiento incremental en 16 pasos de carga. El método de Newton se ejecuta con una tolerancia de convergencia tol $=10^{-3}$ (y tol $=10^{-6}$ en el paso final), permitiendo un máximo de 100 iteraciones de Newton por paso y hasta 500 iteraciones en la etapa final. La barra de colores se ajusta para mostrar en rojo la magnitud de la densidad de energía máxima, que es de $152$ mJ.
                             </p>
                         </div>
                     </div>
@@ -418,21 +679,28 @@ Applied Sciences</em>.
                 <div class="code-card">
                     <span class="code-badge">FreeFEM++</span>
                     <h3 class="code-title">DarcyPrimal2d.edp</h3>
-                    <p class="code-desc">Purpose of the code: Numerical verification of the finite element approximation for a two-dimensional Darcy problem in primal formulation. The code solves the problem using continuous piecewise-linear ($P_1$) finite elements, compares the numerical solution with the exact analytical solution, and evaluates the $H^1$-error and convergence rate under successive mesh refinements.</p>
+                    <p class="code-desc en">Purpose of the code: Numerical verification of the finite element approximation for a two-dimensional Darcy problem in primal formulation. The code solves the problem using continuous piecewise-linear ($P_1$) finite elements, compares the numerical solution with the exact analytical solution, and evaluates the $H^1$-error and convergence rate under successive mesh refinements.</p>
+                    <p class="code-desc es">Propósito del código: Verificación numérica de la aproximación por elementos finitos de un problema de Darcy bidimensional en formulación primal. El código resuelve el problema con elementos finitos continuos lineales a trozos ($P_1$), compara la solución numérica con la solución analítica exacta y evalúa el error en $H^1$ y la tasa de convergencia bajo refinamientos sucesivos de la malla.</p>
 
                     <div class="code-figure-grid">
                         <div class="code-figure">
                             <video src="DarcyPrimal2d_exact.mp4" autoplay loop muted playsinline controls style="width:100%; border-radius:4px; background:#fff;"></video>
-                            <div class="code-figure-caption-label">Exact solution</div>
-                            <p class="code-figure-caption">
+                            <div class="code-figure-caption-label"><span class="en">Exact solution</span><span class="es">Solución exacta</span></div>
+                            <p class="code-figure-caption en">
                                 Analytical pressure field $p(x,y)=\cos(\pi x)\sin(\pi y),$ used as the reference solution for the two-dimensional Darcy problem.
+                            </p>
+                            <p class="code-figure-caption es">
+                                Campo de presión analítico $p(x,y)=\cos(\pi x)\sin(\pi y),$ usado como solución de referencia para el problema de Darcy bidimensional.
                             </p>
                         </div>
                         <div class="code-figure">
                             <video src="DarcyPrimal2d_approx.mp4" autoplay loop muted playsinline controls style="width:100%; border-radius:4px; background:#fff;"></video>
-                            <div class="code-figure-caption-label">Approximate solution</div>
-                            <p class="code-figure-caption">
+                            <div class="code-figure-caption-label"><span class="en">Approximate solution</span><span class="es">Solución aproximada</span></div>
+                            <p class="code-figure-caption en">
                                 Finite element approximation of the pressure field obtained using continuous piecewise-linear ($P_1$) finite elements on a triangular mesh.
+                            </p>
+                            <p class="code-figure-caption es">
+                                Aproximación por elementos finitos del campo de presión, obtenida con elementos finitos continuos lineales a trozos ($P_1$) sobre una malla triangular.
                             </p>
                         </div>
                     </div>
@@ -441,21 +709,28 @@ Applied Sciences</em>.
                 <div class="code-card">
                     <span class="code-badge">FreeFEM++</span>
                     <h3 class="code-title">DarcyPrimal3d.edp</h3>
-                    <p class="code-desc">Purpose of the code: Numerical verification of the finite element approximation for a three-dimensional Darcy problem in primal formulation. The code solves the problem using continuous piecewise-linear ($P_1$) finite elements on a tetrahedral mesh, compares the numerical solution with the exact analytical solution, and evaluates the $H^1$-error and convergence rate under successive mesh refinements.</p>
+                    <p class="code-desc en">Purpose of the code: Numerical verification of the finite element approximation for a three-dimensional Darcy problem in primal formulation. The code solves the problem using continuous piecewise-linear ($P_1$) finite elements on a tetrahedral mesh, compares the numerical solution with the exact analytical solution, and evaluates the $H^1$-error and convergence rate under successive mesh refinements.</p>
+                    <p class="code-desc es">Propósito del código: Verificación numérica de la aproximación por elementos finitos de un problema de Darcy tridimensional en formulación primal. El código resuelve el problema con elementos finitos continuos lineales a trozos ($P_1$) sobre una malla tetraédrica, compara la solución numérica con la solución analítica exacta y evalúa el error en $H^1$ y la tasa de convergencia bajo refinamientos sucesivos de la malla.</p>
 
                     <div class="code-figure-grid">
                         <div class="code-figure">
                             <video src="Darcy-3D-primal_exact.mp4" autoplay loop muted playsinline controls style="width:100%; border-radius:4px; background:#fff;"></video>
-                            <div class="code-figure-caption-label">Exact solution</div>
-                            <p class="code-figure-caption">
+                            <div class="code-figure-caption-label"><span class="en">Exact solution</span><span class="es">Solución exacta</span></div>
+                            <p class="code-figure-caption en">
                                 Analytical pressure field $p(x,y,z)=\cos(\pi x)\sin(\pi y)e^z,$ used as the reference solution for the three-dimensional Darcy problem.
+                            </p>
+                            <p class="code-figure-caption es">
+                                Campo de presión analítico $p(x,y,z)=\cos(\pi x)\sin(\pi y)e^z,$ usado como solución de referencia para el problema de Darcy tridimensional.
                             </p>
                         </div>
                         <div class="code-figure">
                             <video src="Darcy-3D-primal_approx.mp4" autoplay loop muted playsinline controls style="width:100%; border-radius:4px; background:#fff;"></video>
-                            <div class="code-figure-caption-label">Approximate solution</div>
-                            <p class="code-figure-caption">
+                            <div class="code-figure-caption-label"><span class="en">Approximate solution</span><span class="es">Solución aproximada</span></div>
+                            <p class="code-figure-caption en">
                                 Finite element approximation of the pressure field obtained using continuous piecewise-linear ($P_1$) finite elements on a tetrahedral mesh of the three-dimensional domain.
+                            </p>
+                            <p class="code-figure-caption es">
+                                Aproximación por elementos finitos del campo de presión, obtenida con elementos finitos continuos lineales a trozos ($P_1$) sobre una malla tetraédrica del dominio tridimensional.
                             </p>
                         </div>
                     </div>
@@ -464,21 +739,28 @@ Applied Sciences</em>.
                 <div class="code-card">
                     <span class="code-badge">FreeFEM++</span>
                     <h3 class="code-title">DarcyMixed2d.edp</h3>
-                    <p class="code-desc">Purpose of the code: Numerical verification of the mixed finite element approximation for a two-dimensional Darcy problem. The code simultaneously computes the Darcy flux and pressure using the Raviart&ndash;Thomas $RT_0$ finite element space for the flux and the piecewise-constant $P_0$ space for the pressure. The numerical solution is compared with the exact solution, and the errors and convergence rates are evaluated in the $H(\mathrm{div})$ norm for the flux and the $L^2$ norm for the pressure.</p>
+                    <p class="code-desc en">Purpose of the code: Numerical verification of the mixed finite element approximation for a two-dimensional Darcy problem. The code simultaneously computes the Darcy flux and pressure using the Raviart&ndash;Thomas $RT_0$ finite element space for the flux and the piecewise-constant $P_0$ space for the pressure. The numerical solution is compared with the exact solution, and the errors and convergence rates are evaluated in the $H(\mathrm{div})$ norm for the flux and the $L^2$ norm for the pressure.</p>
+                    <p class="code-desc es">Propósito del código: Verificación numérica de la aproximación por elementos finitos mixtos de un problema de Darcy bidimensional. El código calcula simultáneamente el flujo de Darcy y la presión usando el espacio de elementos finitos de Raviart&ndash;Thomas $RT_0$ para el flujo y el espacio de constantes a trozos $P_0$ para la presión. La solución numérica se compara con la solución exacta, y los errores y tasas de convergencia se evalúan en la norma $H(\mathrm{div})$ para el flujo y en la norma $L^2$ para la presión.</p>
 
                     <div class="code-figure-grid">
                         <div class="code-figure">
                             <video src="Darcy-mixto_exact_u.mp4" autoplay loop muted playsinline controls style="width:100%; border-radius:4px; background:#fff;"></video>
-                            <div class="code-figure-caption-label">Exact solution</div>
-                            <p class="code-figure-caption">
+                            <div class="code-figure-caption-label"><span class="en">Exact solution</span><span class="es">Solución exacta</span></div>
+                            <p class="code-figure-caption en">
                                 Analytical flux field $$\mathbf{u}(x,y)=\left[\frac{\pi}{D}\sin(\pi x)\sin(\pi y),\ -\frac{\pi}{D}\cos(\pi x)\cos(\pi y)\right],$$ with pressure field $p(x,y)=\cos(\pi x)\sin(\pi y)$, used as reference solutions for the mixed Darcy problem.
+                            </p>
+                            <p class="code-figure-caption es">
+                                Campo de flujo analítico $$\mathbf{u}(x,y)=\left[\frac{\pi}{D}\sin(\pi x)\sin(\pi y),\ -\frac{\pi}{D}\cos(\pi x)\cos(\pi y)\right],$$ con campo de presión $p(x,y)=\cos(\pi x)\sin(\pi y)$, usados como soluciones de referencia para el problema de Darcy mixto.
                             </p>
                         </div>
                         <div class="code-figure">
                             <video src="Darcy-mixto_aprox_uh.mp4" autoplay loop muted playsinline controls style="width:100%; border-radius:4px; background:#fff;"></video>
-                            <div class="code-figure-caption-label">Approximate solution</div>
-                            <p class="code-figure-caption">
+                            <div class="code-figure-caption-label"><span class="en">Approximate solution</span><span class="es">Solución aproximada</span></div>
+                            <p class="code-figure-caption en">
                                 Mixed finite element approximation of the Darcy flux and pressure, using the Raviart&ndash;Thomas $RT_0$ finite element space for the flux and the piecewise-constant $P_0$ finite element space for the pressure.
+                            </p>
+                            <p class="code-figure-caption es">
+                                Aproximación por elementos finitos mixtos del flujo de Darcy y de la presión, usando el espacio de Raviart&ndash;Thomas $RT_0$ para el flujo y el espacio de constantes a trozos $P_0$ para la presión.
                             </p>
                         </div>
                     </div>
@@ -487,13 +769,17 @@ Applied Sciences</em>.
                 <div class="code-card">
                     <span class="code-badge">FreeFEM++</span>
                     <h3 class="code-title">DarcyMixedFracture2d.edp</h3>
-                    <p class="code-desc">Purpose of the code: Numerical solution of a two-dimensional Darcy problem in mixed formulation on a fracture-network domain with piecewise-constant permeability coefficients. The Darcy flux $u_h$ and pressure $p_h$ are computed using the Raviart&ndash;Thomas $RT_0$ finite element space for the flux and the piecewise-constant $P_0$ space for the pressure. The code accounts for different material properties inside and outside the fracture and imposes prescribed pressure boundary conditions on the left and bottom boundaries.</p>
+                    <p class="code-desc en">Purpose of the code: Numerical solution of a two-dimensional Darcy problem in mixed formulation on a fracture-network domain with piecewise-constant permeability coefficients. The Darcy flux $u_h$ and pressure $p_h$ are computed using the Raviart&ndash;Thomas $RT_0$ finite element space for the flux and the piecewise-constant $P_0$ space for the pressure. The code accounts for different material properties inside and outside the fracture and imposes prescribed pressure boundary conditions on the left and bottom boundaries.</p>
+                    <p class="code-desc es">Propósito del código: Solución numérica de un problema de Darcy bidimensional en formulación mixta sobre un dominio con red de fracturas y coeficientes de permeabilidad constantes a trozos. El flujo de Darcy $u_h$ y la presión $p_h$ se calculan con el espacio de elementos finitos de Raviart&ndash;Thomas $RT_0$ para el flujo y el espacio de constantes a trozos $P_0$ para la presión. El código considera propiedades materiales distintas dentro y fuera de la fractura e impone condiciones de presión prescrita en las fronteras izquierda e inferior.</p>
 
                     <div class="code-figure">
                         <img src="Darcy-mixto-fracture_aprox.png" alt="Approximate solution for the Darcy mixed problem on a fracture-network domain">
-                        <div class="code-figure-caption-label">Approximate solution</div>
-                        <p class="code-figure-caption">
+                        <div class="code-figure-caption-label"><span class="en">Approximate solution</span><span class="es">Solución aproximada</span></div>
+                        <p class="code-figure-caption en">
                             Mixed finite element approximation of the Darcy flux $u_h$ and pressure $p_h$ on a fracture-network domain, obtained with the Raviart&ndash;Thomas $RT_0$ finite element space for the flux and the piecewise-constant $P_0$ finite element space for the pressure. Piecewise-constant permeability coefficients are imposed with different values inside and outside the fracture, and prescribed pressure boundary conditions are enforced on the left and bottom boundaries.
+                        </p>
+                        <p class="code-figure-caption es">
+                            Aproximación por elementos finitos mixtos del flujo de Darcy $u_h$ y la presión $p_h$ en un dominio con red de fracturas, obtenida con el espacio de Raviart&ndash;Thomas $RT_0$ para el flujo y el espacio de constantes a trozos $P_0$ para la presión. Se imponen coeficientes de permeabilidad constantes a trozos con valores distintos dentro y fuera de la fractura, y condiciones de presión prescrita en las fronteras izquierda e inferior.
                         </p>
                     </div>
                 </div>
@@ -501,41 +787,61 @@ Applied Sciences</em>.
                 <div class="code-card">
                     <span class="code-badge">FreeFEM++</span>
                     <h3 class="code-title">NS-mixto-cavidad-2D.edp</h3>
-                    <p class="code-desc">Purpose of the code: Numerical solution of the two-dimensional stationary Navier&ndash;Stokes problem in mixed formulation for a cavity flow with two circular obstacles. The code approximates the velocity field and the pseudo-stress using mixed finite elements and employs a Newton iteration strategy to handle the nonlinear convective term. The computation also recovers the pressure field through a post-processing formula and exports the numerical solution for visualization in ParaView.</p>
+                    <p class="code-desc en">Purpose of the code: Numerical solution of the two-dimensional stationary Navier&ndash;Stokes problem in mixed formulation for a cavity flow with two circular obstacles. The code approximates the velocity field and the pseudo-stress using mixed finite elements and employs a Newton iteration strategy to handle the nonlinear convective term. The computation also recovers the pressure field through a post-processing formula and exports the numerical solution for visualization in ParaView.</p>
+                    <p class="code-desc es">Propósito del código: Solución numérica del problema de Navier&ndash;Stokes estacionario bidimensional en formulación mixta para un flujo en cavidad con dos obstáculos circulares. El código aproxima el campo de velocidad y el pseudo-esfuerzo con elementos finitos mixtos y emplea una iteración de Newton para tratar el término convectivo no lineal. El cálculo también recupera el campo de presión mediante una fórmula de postprocesamiento y exporta la solución numérica para su visualización en ParaView.</p>
 
                     <div class="code-figure">
                         <img src="Navier-stokes-flow-2-obstacles.png" alt="Navier-Stokes cavity flow with two circular obstacles">
-                        <div class="code-figure-caption-label">Numerical solution</div>
-                        <p class="code-figure-caption">
+                        <div class="code-figure-caption-label"><span class="en">Numerical solution</span><span class="es">Solución numérica</span></div>
+                        <p class="code-figure-caption en">
                             Mixed finite element approximation of the velocity field and pseudo-stress for the stationary Navier&ndash;Stokes cavity flow with two circular obstacles, computed via a Newton iteration for the nonlinear convective term. The pressure field is recovered by post-processing and the solution is exported for visualization in ParaView.
+                        </p>
+                        <p class="code-figure-caption es">
+                            Aproximación por elementos finitos mixtos del campo de velocidad y del pseudo-esfuerzo para el flujo estacionario de Navier&ndash;Stokes en una cavidad con dos obstáculos circulares, calculada mediante una iteración de Newton para el término convectivo no lineal. El campo de presión se recupera por postprocesamiento y la solución se exporta para su visualización en ParaView.
                         </p>
                     </div>
                 </div>
             </section>
 
             <section id="teaching">
-                <h2>🎓 Teaching and Supervision</h2>
-                <p>I have lectured and led seminars at several international institutions:</p>
-                
+                <h2><span class="en">🎓 Teaching and Supervision</span><span class="es">🎓 Docencia y supervisión</span></h2>
+                <p class="en">I have lectured and led seminars at several international institutions:</p>
+                <p class="es">He dictado cursos y dirigido seminarios en varias instituciones internacionales:</p>
+
                 <h3>Universidad de O'Higgins (Chile)</h3>
-                <ul>
+                <ul class="en">
                     <li>Introduction to Discrete Mathematics (ING1111)</li>
                     <li>Linear Algebra (ING1102)</li>
                     <li>Organizer of the <em>Calculus of Variations & PDE Seminar</em>.</li>
                     <li><strong>PhD Supervision:</strong> Active co-supervision of Ph.D. students (UOH), partial supervision for Patricio Morales-Rosales (Main supervisor: Prof. D. Henao).</li>
                 </ul>
+                <ul class="es">
+                    <li>Introducción a la Matemática Discreta (ING1111)</li>
+                    <li>Álgebra Lineal (ING1102)</li>
+                    <li>Organizador del <em>Seminario de Cálculo de Variaciones y EDP</em>.</li>
+                    <li><strong>Supervisión de doctorado:</strong> Co-supervisión activa de estudiantes de doctorado (UOH), supervisión parcial de Patricio Morales-Rosales (Director principal: Prof. D. Henao).</li>
+                </ul>
 
                 <h3>Universidad de Concepción (Chile)</h3>
-                <ul>
+                <ul class="en">
                     <li>Real Analysis I (527203), Calculus I (527140/527147), Calculus II (527148), Complementary Calculus (521236), and Introduction to University Mathematics.</li>
                     <li><em>Tutoring:</em> Linear Algebra, Real Analysis, and Calculus III.</li>
                 </ul>
+                <ul class="es">
+                    <li>Análisis Real I (527203), Cálculo I (527140/527147), Cálculo II (527148), Cálculo Complementario (521236) e Introducción a la Matemática Universitaria.</li>
+                    <li><em>Tutorías:</em> Álgebra Lineal, Análisis Real y Cálculo III.</li>
+                </ul>
 
                 <h3>Universidad del Atlántico (Colombia)</h3>
-                <ul>
+                <ul class="en">
                     <li>Calculus I & II, Differential Calculus, Foundations of Mathematics, and Advanced Trigonometry.</li>
                     <li>Short courses on Orthogonal Polynomials.</li>
                     <li><em>Supervision:</em> Full supervision for BSc. projects (Alex Aristizabal, Luis Ricardo Siado) and partial supervision for Master's project (William Ramirez-Quiroga).</li>
+                </ul>
+                <ul class="es">
+                    <li>Cálculo I y II, Cálculo Diferencial, Fundamentos de Matemáticas y Trigonometría Avanzada.</li>
+                    <li>Cursos cortos sobre Polinomios Ortogonales.</li>
+                    <li><em>Supervisión:</em> Supervisión completa de trabajos de pregrado (Alex Aristizabal, Luis Ricardo Siado) y supervisión parcial de trabajo de maestría (William Ramirez-Quiroga).</li>
                 </ul>
             </section>
         </div>
@@ -543,14 +849,14 @@ Applied Sciences</em>.
         <div class="sidebar">
             <div class="sidebar-box">
                 <img src="profile.jpg" alt="Pedro Hernández-Llanos" class="profile-img" onerror="this.style.display='none'">
-                <h3>Contact</h3>
+                <h3><span class="en">Contact</span><span class="es">Contacto</span></h3>
                 <ul class="contact-list">
                     <li>📧 <a href="mailto:phernandezllanos@gmail.com">phernandezllanos@gmail.com</a></li>
                     <li>🆔 ORCID: <a href="https://orcid.org/0000-0001-5017-2108" target="_blank">0000-0001-5017-2108</a></li>
-                    <li>📝 zbMATH Open: <a href="https://zbmath.org/authors/?q=Pedro+Hernandez-Llanos" target="_blank">zbMATH Profile</a></li>
+                    <li>📝 zbMATH Open: <a href="https://zbmath.org/authors/?q=Pedro+Hernandez-Llanos" target="_blank"><span class="en">zbMATH Profile</span><span class="es">Perfil zbMATH</span></a></li>
                     <li>🔬 <a href="https://www.researchgate.net/profile/Pedro-Hernandez-Llanos" target="_blank">ResearchGate</a></li>
                     <li>💼 <a href="https://www.linkedin.com/in/pedro-hernandez-llanos-254124160/" target="_blank">LinkedIn</a></li>
-                    <li>🌍 Website: <a href="https://sites.google.com/view/calcvar-uoh" target="_blank">CalcVar - UOH</a></li>
+                    <li>🌍 <span class="en">Website</span><span class="es">Sitio web</span>: <a href="https://sites.google.com/view/calcvar-uoh" target="_blank">CalcVar - UOH</a></li>
                 </ul>
             </div>
         </div>
@@ -559,6 +865,29 @@ Applied Sciences</em>.
     <footer>
         <p>&copy; 2026 Pedro Luis Hernández-Llanos.</p>
     </footer>
+
+    <script>
+        function setLang(lang) {
+            if (lang !== 'en' && lang !== 'es') lang = 'en';
+            document.body.setAttribute('data-lang', lang);
+            document.documentElement.setAttribute('lang', lang);
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+            try { localStorage.setItem('site-lang', lang); } catch (e) {}
+        }
+        (function initLang() {
+            var lang = null;
+            try {
+                var q = new URLSearchParams(window.location.search).get('lang');
+                if (q === 'es' || q === 'en') lang = q;
+            } catch (e) {}
+            if (!lang) {
+                try { lang = localStorage.getItem('site-lang'); } catch (e) {}
+            }
+            if (lang !== 'es' && lang !== 'en') lang = 'en';
+            setLang(lang);
+        })();
+    </script>
 
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({

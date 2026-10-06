@@ -1,5 +1,7 @@
 # Pedro Hernández-Llanos, Ph.D.
 
+🌐 **Website:** [pedrohernandez-jpg.github.io](https://pedrohernandez-jpg.github.io/) &nbsp;|&nbsp; 🇪🇸 **Versión en español:** [pedrohernandez-jpg.github.io/?lang=es](https://pedrohernandez-jpg.github.io/?lang=es)
+
 Welcome to my GitHub profile! I am a pure and applied mathematician whose research focuses on the interaction of the **Calculus of Variations**, **Partial Differential Equations (PDEs)**, and **Solid Mechanics**, with applications to **Materials Science** and **Continuum Mechanics**. The use of variational methods is a common theme throughout my work. Specifically, I specialize in the **Homogenization** of problems arising in the context of PDEs with **Thin structures** and **Multistructures**. I am interested in developing mathematical theories for the behaviour of new materials via **simultaneous homogenization and dimension reduction** using **multiscale convergence**, **$\Gamma$-convergence**, and the **periodic unfolding method** by combining variational techniques, **operator theory**, and **geometric measure theory**. These methods have direct applications in Mechanical and Electrical Engineering, as well as Fluid Flow, to name a few.
 
 Alongside my theoretical research, I have experience in **Computational Mechanics** and **Numerical Methods for PDEs**, particularly the **Finite Element Method (FEM)**. I have worked with scientific computing tools including **Python**, **FreeFEM++**, **Matlab**, **Julia**, **R** and the finite element software **NGSolve**, applying numerical techniques to the simulation and analysis of complex physical systems. My current interests also include **computational modeling of nonlinear materials** and **soft matter systems**, where analytical and numerical approaches are combined to investigate **stability phenomena** and multiscale behavior.
@@ -54,6 +56,42 @@ Umeå universitet, 901 87 Umeå, Sweden
 
 ---
 
+## 🏆 Grants as Principal Investigator (PI) and Awards
+
+* **2025** | *Umeå Universitet — Horizon Europe Marie Skłodowska-Curie Actions.*
+  Call HORIZON-MSCA-2025-PF-01-01, MSCA Postdoctoral Fellowships 2025. Project proposal 101274133-VAMOS. Total score: 86.4% (threshold: 70/100). **Seal of Excellence.**
+* **15/04/2023 – 14/04/2026** | *National Agency for Research and Development of Chile (ANID) — Fondecyt Postdoctoral Fellowship 2023.*
+  Grant No. 3230202. Awarded on the basis of academic merit. Valued at 30,000 USD per annum.
+* **20/06/2025 – 19/07/2025** | *Instituto de Ciencias Matemáticas (ICMAT), Universidad Autónoma de Madrid, Spain.*
+  Grant "Puentes Matemáticos con Latinoamérica" 2025. Awarded on the basis of academic merit. Valued at 1,100 USD per month.
+* **02/10/2021 – 30/09/2022** | *Croatian Science Foundation (HRZZ).*
+  "Homogenization and dimension reduction and Structural Optimization in continuum mechanics". Awarded as Associate Postdoctoral Fellow at the Faculty of Electrical Engineering and Computing (FER), University of Zagreb, on the basis of academic merit. Valued at 1,800 USD per month.
+* **2015 – 2020** | *National Agency for Research and Development of Chile (ANID) — Fondecyt National Doctoral Fellowship 2015.*
+  Grant No. 21150001. Awarded on the basis of academic merit. Valued at 12,065 USD per annum.
+* **2015** | *Universidad del Atlántico, Colombia — Impacto Caribe Project.*
+  "About generalized Apostol-type polynomials", number IC-002627-2015. Awarded on the basis of academic merit. Valued at 60,000,000 COP per annum.
+* **2014** | *Universidad del Atlántico, Colombia — Young Researchers Project 2014 (Colciencias).*
+  "Existence of Oscillations in Chua's Circuit." Administrative Department of Science of Colombia (Colciencias). Awarded on the basis of academic merit. Valued at 21,600,000 COP per annum.
+* **2011 – 2014** | *Universidad del Atlántico, Colombia — Best bachelor student prize.*
+  Full fellowship to pursue a Master's degree. Awarded on the basis of academic merit. Free tuition throughout the entire course.
+* **2005 – 2010** | *Universidad del Atlántico, Colombia — Best bachelor student grades by semester prize.*
+  Awarded on the basis of academic merit. Free tuition throughout the entire course.
+
+---
+
+## ✈️ Research Trips
+
+* **26/07/2025 – 23/09/2025** | *Umeå University, Department of Mathematics and Mathematical Statistics, Sweden.*
+  I worked with project partner Prof. Sebastian Throm. The aim of this visit was to finish our paper "Derivation of the amplitude equation for the space-fractional Swift-Hohenberg equation via evolutionary Γ-convergence".
+* **20/06/2025 – 19/07/2025** | *Universidad Autónoma de Madrid, Spain — Instituto de Ciencias Matemáticas (ICMAT).*
+  I worked with project partner Prof. Carlos Mora-Corral. The aim of this visit was to finish my research on the von Kármán model for nonlinear magnetoelastic plates via simultaneous homogenization and dimension reduction.
+* **18/09/2024 – 07/02/2025** | *Umeå University, Department of Mathematics and Mathematical Statistics, Sweden.*
+  I worked with project partner Prof. Sebastian Throm. This visit started the writing of our paper "Derivation of the amplitude equation for the space-fractional Swift-Hohenberg equation via evolutionary Γ-convergence".
+* **05/11/2018 – 31/01/2019** | *Dipartimento di Matematica e Applicazioni Renato Caccioppoli, Università degli Studi di Napoli Federico II, Naples, Italy.*
+  I worked with Prof. Antonio Gaudiello and Prof. Luciano Carbone. This visit led to the articles "T-junction of ferroelectric wires" and "Junction of ferroelectric thin cylinders" listed below.
+
+---
+
 ## 🛠️ Scientific Computing and Tools
 
 I have experience developing scientific code applied to solving and simulating PDEs, variational methods, and dimensional reduction problems:
@@ -79,6 +117,13 @@ I have experience developing scientific code applied to solving and simulating P
 * **D. Henao, P. Hernández-Llanos, C. Roman, & X. Lamy** (2026). *Stability surface for confined hydrogel layer on substrates*. (To be submitted to **SIAM J. Appl. Anal.**). [PDF Paper](https://pedrohernandez-jpg.github.io/Paper1version2026.pdf).
 * *Junction of ferroelectric thin cylinders* (with L. Faella and R. Prakash) – Submitted to **ESAIM: COCV**. [arXiv:2311.00515](https://doi.org/10.48550/arXiv.2311.00515).
 * *Homogenized moderately wrinkled shell theory from 3d koiter's linear elasticity* (with R. Mahadevan and R. Prakash) – Submitted to **Mathematical Models and Methods in Applied Sciences**. [arXiv:2601.11384](https://arxiv.org/abs/2601.11384).
+
+### In Preparation
+
+* **P. Hernández-Llanos & S. Throm** (2026). *Derivation of the amplitude equation for the space-fractional Swift-Hohenberg equation via evolutionary Γ-convergence*. In preparation.
+* **C. Mora-Corral, L. D'Elia & P. Hernández-Llanos** (2026). *About von Kármán theories for a magnetoelastic composite plate obtained by simultaneous homogenization and dimension reduction*. In preparation.
+* **P. Hernández-Llanos** (2026). *Poroelastic shell model obtained by simultaneous homogenization and dimension reduction*. In preparation.
+* **P. Hernández-Llanos** (2026). *A model for a gel bonded to a curved rigid substrate*. In preparation.
 
 ---
 
