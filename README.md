@@ -254,20 +254,50 @@ Mixed finite element approximation of the velocity field and pseudo-stress for t
 
 ---
 
-## 🎓 Teaching and Supervision
+## 🎓 Supervision, Teaching and Mentoring
 
-I have lectured and led seminars at several international institutions:
+### PhD Supervision (Universidad de O’Higgins, Chile)
 
-* **Universidad de O'Higgins (Chile):** Introduction to Discrete Mathematics (ING1111), Linear Algebra (ING1102). Organizer of the *Calculus of Variations & PDE Seminar*.
-* **Universidad de Concepción (Chile):** Real Analysis I, Calculus I and II, Introduction to University Mathematics.
-* **Universidad del Atlántico (Colombia):** Differential Calculus, Foundations of Mathematics, Short courses on Orthogonal Polynomials.
-* **Corporación para el Desarrollo Profesional de la Costa (CODENALCO), Colombia (Lecturing):** 2012 (Semesters 1 and 2): Calculus I, Probabilistic Statistics, Introduction to Software Development.
-* **High School (Grades 6–11) and Primary School (Grades 1–5) Mathematics Teaching, Colombia:**
-  * 2013 – 2014: Institución Educativa María Auxiliadora de Galapa, Barranquilla.
-  * 2012: Colegio San José Hermanitas de la Anunciación, Barranquilla.
-  * 2011: Nuevo Colegio del Prado, Barranquilla.
-  * 2010: Colegio María Montessori de Soledad 2000, Soledad.
-* **Supervision:** Active co-supervision of Ph.D. students (UOH), Master's, and undergraduate students (U. del Atlántico).
+* **15/04/2024 – Now** | **Patricio Morales-Rosales.** Partial supervision for the first part of his PhD project. Main supervisor: Prof. D. Henao.
+
+### Supervision Master and Bachelor’s (Universidad del Atlántico, Colombia)
+
+* **01/06/2014 – 31/12/2015** | **William Ramirez-Quiroga.** Partial supervision for the final part of his Master project. Main supervisor: Prof. A. Urieles Guerrero.
+* **2014 – 2015** | **Alex Aristizabal and Luis Ricardo Siado.** Full supervision for their BSc. project. Main supervisor: Prof. A. Urieles Guerrero.
+
+### Lecturing (Universidad de O’Higgins, Chile)
+
+* **2024, Sem 1; 2023, Sem 2** | ING1111: Introduction to Discrete Mathematics; ING1102: Linear Algebra.
+
+### Lecturing (Universidad de Concepción, Chile)
+
+* **2021, Sem 1, 2** | 527140: Calculus I and 527117: Mathematics I and 527148: Calculus II.
+* **2020, Quarter 1, 2, 3** | 527148: Introduction to College Mathematics, Calculus I, Calculus II.
+* **2019, Quarter 2, 3** | 527147: Calculus I, 527148: Calculus II.
+* **2019, Sem 1, 2** | 527203: Real Analysis I, 521236: Complementary Calculus.
+
+### Tutoring (Universidad de Concepción, Chile)
+
+* **2017, Sem 1** | Linear Algebra and Real Analysis.
+* **2016** | Calculus III.
+* **2015, Sem 1** | Calculus I, Calculus III and Introduction to University Mathematics.
+
+### Lecturing (Universidad del Atlántico, Colombia)
+
+* **02/2014 – 03/2014** | Minicourse: Orthogonal Polynomials.
+* **2014, Sem 2** | Calculus I (two courses), Calculus II.
+* **2013, Sem 1, 2** | Calculus I, Differential Calculus, Foundations of Mathematics; Calculus I, Differential Calculus, Foundations of Mathematics, Advanced Trigonometry.
+
+### Lecturing (Corporación para el Desarrollo Profesional de la Costa (CODENALCO), Colombia)
+
+* **2012, Sem 1, 2** | Calculus I, Probabilistic Statistics, Introduction to Software Development.
+
+### High School (Grades 6–11) and Primary School (Grades 1–5) Mathematics Teaching, Colombia
+
+* **2013 – 2014** | Institución Educativa María Auxiliadora de Galapa, Barranquilla.
+* **2012** | Colegio San José Hermanitas de la Anunciación, Barranquilla.
+* **2011** | Nuevo Colegio del Prado, Barranquilla.
+* **2010** | Colegio María Montessori de Soledad 2000, Soledad.
 
 ---
 
