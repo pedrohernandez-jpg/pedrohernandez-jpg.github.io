@@ -32,8 +32,9 @@ Umeå universitet, 901 87 Umeå, Sweden
   * **PhD Thesis Grade:** 6.7/7.0 (Outstanding).
 
 * **M.Sc. in Mathematical Sciences** | *Universidad del Atlántico, Colombia* (2011 – 2014)
-  * **Thesis:** *On new families of generalized Apostol-type polynomials and their properties*
+  * **Thesis:** [*On new families of generalized Apostol-type polynomials and their properties*](https://pedrohernandez-jpg.github.io/Master_Thesis.pdf)
   * **Supervisor:** Prof. Alejandro Urieles Guerrero.
+  * **Master Thesis Grade:** 5.0/5.0 (Outstanding).
 
 * **Bachelor’s Degree in High School Education (Major in Mathematics)** | *Universidad del Atlántico, Colombia* (2005 – 2010)
   * **Honors:** Grade 4.34/5.0 (1st overall).
@@ -310,6 +311,31 @@ Mixed finite element approximation of the velocity field and pseudo-stress for t
 * **2012** | Colegio San José Hermanitas de la Anunciación, Barranquilla.
 * **2011** | Nuevo Colegio del Prado, Barranquilla.
 * **2010** | Colegio María Montessori de Soledad 2000, Soledad.
+
+---
+
+## 📣 Community Outreach (Difusión a la comunidad / Vinculación con el medio)
+
+### “Las matemáticas se toman el Campus Rancagua” — ICI Seminar
+
+ICI Seminar. Instituto de Ciencias de la Ingeniería, Universidad de O'Higgins, Rancagua, Chile. Talk “Variational limits of some problems in multistructures for ferroelectric, hyperelastic and poroelastic materials by dimension reduction and homogenization”, aimed at students, faculty and the general public interested in mathematics. 05/10/2023.
+
+<img src="https://pedrohernandez-jpg.github.io/Seminario_ICI.png" alt="Seminario ICI — Las matemáticas se toman el Campus Rancagua" width="100%">
+
+### Participation in master/PhD course “Research in mathematical sciences” — Umeå University, Sweden
+
+* **Date:** 22/10/2024.
+* **Place:** Department of Mathematics and Mathematical Statistics, MIT-huset, plan 3, Matematik och matematisk statistik, MIT.A.356, Umeå universitet, 901 87 Umeå, Sweden.
+* **Audience:** Master's and PhD students in Mathematical Sciences and faculty.
+* **Carried out by:** Pedro Hernández-Llanos (PI).
+* **Description:** Professor Clara Stokes invited me to take part in this course. In a 15–20 minute slot I told the Master's students and the newly hired PhD students at Umeå University about my position, my research, how I got to where I am, and my views on career paths inside and outside academia. I presented slides in English addressing each of these aspects.
+* **Link with the project:** Disseminating this general overview of my research line in Calculus of Variations and Partial Differential Equations makes it known to a non-expert audience and can also attract potential researchers from other areas who may actively collaborate on the objectives of this project. It allowed me to present this line, which is not so well known at the Department of Mathematics and Mathematical Statistics of Umeå University, to new Master's and PhD students.
+
+---
+
+## ▶️ YouTube Channel
+
+[**YouTube channel “Pedro Hernández-Llanos”**](https://www.youtube.com/@pedrohernandez-llanos7760): 48 video lessons on university mathematics (Calculus, Linear Algebra, Discrete Mathematics), as open complementary study material. 2020 – 2024. 3,872 views to date.
 
 ---
 
